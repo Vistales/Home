@@ -94,6 +94,7 @@ library(stringr)
 library(plotly) 
 library(shiny) 
 library(crosstalk)  
+library(highcharter)
 df <- read.csv("./dataset.csv") # Place your data transformation code here 
 df <- df %>%   
   mutate(date = lubridate::dmy(Observation.Date),          
@@ -104,9 +105,18 @@ df <- df %>%
   mutate(country = sub('.*from ', '', Series.name)) %>%   
   filter(year != 2024 & !if_any(where(is.character),                                  ~ str_detect(.x, "Dubai|Sharjah|Abu Dhabi                                 |Other|Total|ten| certificates|converted"))) %>%   
   group_by(country, year) %>%   
-  summarise(remit = sum(Observation.Value))   ### plotting the remittance of each country for all years 
-plot_ly(df, x = ~year, y = ~remit, color = ~country,                   type = "scatter", mode = "lines+markers") %>%       
-  layout(title = "Remittances by Country and Year",             
-         xaxis = list(title = "Year"),              
-         yaxis = list(title = "Remittances"))   
+  summarise(remit = sum(Observation.Value))%>%
+  filter(remit != 0)
+
+# Generate the interactive chart
+highchart() %>%
+  hc_xAxis(title = list(text = "Year")) %>%
+  hc_yAxis(title = list(text = "Remittances")) %>%
+  hc_add_series(data = df, hcaes(x = year, y = remit, group = country), type = "line") %>%
+  hc_chart(type = "line") %>%
+  hc_legend(enabled = FALSE)%>%
+  hc_title(text = "Remittances by Country and Year") %>%
+  hc_plotOptions(series = list(marker = list(symbol = "circle")))
+
+
 ```
