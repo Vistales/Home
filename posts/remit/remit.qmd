@@ -1,0 +1,112 @@
+---
+title: "Remittances Sent to Pakistan Over Decades" 
+author: "Fazila Sadia" 
+date: today 
+format:    
+  html:     
+    code-fold: true 
+execute:   
+  echo: false   
+  warning: false
+
+---
+
+### Global Remittance Outlook 2022
+
+In the digital age, remittances serve as a vital artery in the global economy, pumping billions of dollars annually across borders. They represent not just monetary transactions but also the hopes, dreams, and sacrifices of millions of migrants striving for a better life and supporting their loved ones back home. These financial lifelines, these remittances, weave a story of sacrifice, resilience, and love that transcends borders and connects hearts across the globe. @fig-global highlights this
+
+Remittance refers to the act of sending money, typically by a person who has migrated from their home country to another, back to their family or loved ones in their country of origin. It's essentially a transfer of funds from one place to another, often to provide financial support or assistance to those who remain in the migrant's home country.
+
+```{r} 
+#| label: fig-global 
+#|fig-cap: "Global Remittance Trend"   
+
+library(readxl) 
+library(dplyr) 
+library(lubridate) 
+library(tidyverse) 
+library(stringr) 
+library(plotly) 
+library(shiny) 
+library(crosstalk)  
+
+remit_inflow <-read_xlsx("./inflow.xlsx")  
+df <- remit_inflow %>%   select(c(1,24)) %>%   
+  rename(countries  = "Remittance inflows (US$ million)", inflow  = "2022") %>%   na.omit()%>%   
+  arrange(desc(inflow))%>%   
+  filter(!if_any(where(is.character),                                  ~ str_detect(.x, "World|Low-and Middle-Income Countries")))%>%   arrange(desc(inflow))%>%   
+  slice(1:10)%>%   
+  mutate(inflow = round(inflow / 1000, 2) )    
+
+plot_ly(df, x = ~inflow, y = ~reorder(countries, inflow),          type = "bar")%>%   
+  layout(title = "World's Top Remittance Recipients in 2022 ",          xaxis = list(title = "", showline = FALSE, showticklabels = FALSE),          
+         yaxis = list(title = ""))%>% 
+  add_annotations(text=~inflow,x = ~inflow+1.5,  
+                  y = ~reorder(countries, inflow), 
+                  font = list(family = 'Calibri', size = 15),
+                  showarrow = FALSE)
+```
+
+### Asia Specific
+
+-   As of 2022, the global remittance landscape witnessed a significant surge, with total remittances reaching a staggering *\[insert billion-dollar figure\]* USD, surpassing previous records.
+
+-   Amidst the global flow of remittances, Asia emerges as a powerhouse, with five of the top 10 recipients hailing from this dynamic region. This statistical snapshot not only underscores Asia's economic centrality but also hints at the intricate web of financial exchanges crisscrossing the continent.
+
+-   Among the top recipients of remittances, India emerged as the frontrunner, receiving a substantial influx of *\[insert billion-dollar figure\]* USD. (Highlight India and China stats then move to Pakistan\>\>\> can you add a map shading three countries and their percentage?)
+
+-   India's robust economy and expansive diaspora contribute to its status as a remittance powerhouse, with billions flowing into the country annually. China, with its booming economic growth and large overseas population, commands a formidable position among the top recipients. However, as we shift our focus to Pakistan, we uncover a nuanced story of remittance flows shaped by unique socioeconomic dynamics and migration pattern. @fig-emmigration deaek
+
+```{r}
+#| label: fig-emmigration 
+#| #| fig-cap: "Remittance Trend"  
+
+install.packages("readxl") 
+library("readxl") 
+library(dplyr)  
+data <- read_xls("./coutnry.xls")  
+data <- data %>%   
+  rename(countries = "...2", total = "...30") %>%   
+  select(c("countries", "total")) %>%   
+  mutate(total = as.numeric(total) ) %>%   
+  filter(total > 200000  & total< 13438966)   
+plot_ly(data, x = ~total,y = ~reorder(countries, total), type = 'bar',         orientation = "h",         hoverinfo = "text",         marker = list(color = ~countries)) %>%   
+  layout(title = "Emigration by Country",          
+         xaxis = list(title = "",showline = FALSE, showticklabels = FALSE),          
+         yaxis = list(showgrid = FALSE,                              showline = FALSE, showticklabels = TRUE, title=""),          
+         barmode = 'group',          showlegend = FALSE) %>%
+  add_annotations(x = ~total *0.79+1 ,text = ~paste(round(total/100000, 2)),font = list(family = 'Arial', size = 15),showarrow = FALSE) %>%   
+  config(displayModeBar = FALSE)  # Optional: Hide the plotly modebar  
+```
+
+## Paksitan's Trend Over the Decades
+
+While Pakistan may not claim the top spots like its regional counterparts, its remittance receipts play a vital role in supporting millions of households and bolstering the national economy. Despite facing challenges such as geopolitical instability and economic uncertainties, Pakistan remains a key player in the global remittance arena. @fig-trend explores the trend of remittances sent to Pakistan
+
+```{r}
+#| label: fig-trend 
+#| #| fig-cap: "Pakistan Remittance Trend Over Decades"  
+
+
+library(lubridate) 
+library(tidyverse) 
+library(stringr) 
+library(plotly) 
+library(shiny) 
+library(crosstalk)  
+df <- read.csv("./dataset.csv") # Place your data transformation code here 
+df <- df %>%   
+  mutate(date = lubridate::dmy(Observation.Date),          
+         year = lubridate::year(date),          
+         month = lubridate::month(date),          
+         day = lubridate::day(date)) %>%   
+  select(-c(1:3)) %>%   
+  mutate(country = sub('.*from ', '', Series.name)) %>%   
+  filter(year != 2024 & !if_any(where(is.character),                                  ~ str_detect(.x, "Dubai|Sharjah|Abu Dhabi                                 |Other|Total|ten| certificates|converted"))) %>%   
+  group_by(country, year) %>%   
+  summarise(remit = sum(Observation.Value))   ### plotting the remittance of each country for all years 
+plot_ly(df, x = ~year, y = ~remit, color = ~country,                   type = "scatter", mode = "lines+markers") %>%       
+  layout(title = "Remittances by Country and Year",             
+         xaxis = list(title = "Year"),              
+         yaxis = list(title = "Remittances"))   
+```
