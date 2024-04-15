@@ -109,14 +109,18 @@ df <- df %>%
   filter(remit != 0)
 
 # Generate the interactive chart
-highchart() %>%
-  hc_xAxis(title = list(text = "Year")) %>%
-  hc_yAxis(title = list(text = "Remittances")) %>%
-  hc_add_series(data = df, hcaes(x = year, y = remit, group = country), type = "line") %>%
-  hc_chart(type = "line") %>%
-  hc_legend(enabled = FALSE)%>%
-  hc_title(text = "Remittances by Country and Year") %>%
-  hc_plotOptions(series = list(marker = list(symbol = "circle")))
+
+df2 <- highlight_key(df, ~country, "Select a country")
+gg <- ggplot(df2) + 
+  geom_line(aes(year, remit, color = country )) +
+  geom_point(aes(year, remit, color = country))
+select <- highlight(
+  ggplotly(gg), 
+  selectize = TRUE, persistent = TRUE
+)
+
+bscols(select)
+
 
 
 ```
