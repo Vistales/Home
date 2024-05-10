@@ -13,9 +13,15 @@ execute:
 
 ### Global Remittance Outlook 2022
 
-In the digital age, remittances serve as a vital artery in the global economy, pumping billions of dollars annually across borders. They represent not just monetary transactions but also the hopes, dreams, and sacrifices of millions of migrants striving for a better life and supporting their loved ones back home. These financial lifelines, these remittances, weave a story of sacrifice, resilience, and love that transcends borders and connects hearts across the globe. @fig-global highlights this
+Sending money back home is more than a simple financial transaction. It serves as a lifeline that connects families across borders, symbolizing love, sacrifice, and the unbreakable bond between migrants and their families. Remittances go beyond mere dollars and cents; they embody resilience, bridging the physical distance and nurturing hope for a better future.
 
-Remittance refers to the act of sending money, typically by a person who has migrated from their home country to another, back to their family or loved ones in their country of origin. It's essentially a transfer of funds from one place to another, often to provide financial support or assistance to those who remain in the migrant's home country.
+In quotes:
+
+Each remittance carries with it the stories of sacrifice, resilience, and determination of those who seek better opportunities afar, while nurturing the dreams and aspirations of loved ones left behind.
+
+
+
+In the digital age, remittances serve as a vital artery in the global economy, pumping billions of dollars annually across borders.  @fig-global highlights this
 
 ```{r} 
 #| label: fig-global 
@@ -91,36 +97,68 @@ While Pakistan may not claim the top spots like its regional counterparts, its r
 library(lubridate) 
 library(tidyverse) 
 library(stringr) 
-library(plotly) 
-library(shiny) 
-library(crosstalk)  
-library(highcharter)
+library(showtext)
+
+############ typography #########3
+
+font_add_google("Fraunces", "Fraunces")
+font_add_google("Poppins", "poppins")
+showtext_auto()
+
+Fraunces <- "Fraunces"
+poppins<- "poppins"
+
+
 df <- read.csv("./dataset.csv") # Place your data transformation code here 
-df <- df %>%   
-  mutate(date = lubridate::dmy(Observation.Date),          
-         year = lubridate::year(date),          
-         month = lubridate::month(date),          
-         day = lubridate::day(date)) %>%   
-  select(-c(1:3)) %>%   
-  mutate(country = sub('.*from ', '', Series.name)) %>%   
-  filter(year != 2024 & !if_any(where(is.character),                                  ~ str_detect(.x, "Dubai|Sharjah|Abu Dhabi                                 |Other|Total|ten| certificates|converted"))) %>%   
-  group_by(country, year) %>%   
-  summarise(remit = sum(Observation.Value))%>%
-  filter(remit != 0)
+# Create a function to determine fiscal year based on given formula
+get_fiscal_year <- function(date) {
+  year <- as.integer(format(date, "%Y"))
+  ifelse(month(date) >= 7, year + 1, year)
+}
 
-# Generate the interactive chart
+# Calculate fiscal year for each observation in the data frame
+df$fiscal_year <- get_fiscal_year(as.Date(df$Observation.Date, format = "%d-%b-%Y"))
 
-df2 <- highlight_key(df, ~country, "Select a country")
-gg <- ggplot(df2) + 
-  geom_line(aes(year, remit, color = country )) +
-  geom_point(aes(year, remit, color = country))
-select <- highlight(
-  ggplotly(gg), 
-  selectize = TRUE, persistent = TRUE
-)
+# Group by country and fiscal year, then calculate sum of remit values
+result <- df %>%
+  group_by(Series.Display.Name, fiscal_year) %>%
+  summarise(remit = sum(Observation.Value)) %>%
+  rename(country = Series.Display.Name,
+         year = fiscal_year)%>%
+  mutate(country = sub(".*?\\.?\\s+(\\b\\w+\\b)", "\\1", country))%>%
+  filter(!str_detect(country, "Cash Flow|Other|Total|EU Countries|Encashment|Dubai|Sharjah|Abu Dhabi|Others"))%>%
+  arrange(country)
 
-bscols(select)
+df<- result
 
+ggplot(df, aes(year, remit, group = country)) + 
+  geom_hline(yintercept = seq(from = 0, to = 8000, by = 2000), col = "gray") +
+  geom_line(data = subset(df, country %in% c("Saudi Arabia", "U.A.E.", "U.K.", "USA")), aes(color = country), size = 1.15) +
+  geom_line(data = subset(df, !country %in% c("Saudi Arabia", "U.A.E.", "U.K.", "USA")), color = "gray", size = 1) +
+  scale_color_manual(values = c("Saudi Arabia" = "#8FC48D", "U.A.E." = "#E1CA70", "U.K." = "#89BAF2", "USA" = "#F7A2D8")) +
+  theme(legend.position = "none", 
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_rect(fill = '#F7F3EC', color = '#F6ECDF'),
+        panel.border = element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.ticks.y =element_blank(),
+        plot.margin = margin(20, 20, 20, 20),
+        plot.title = element_text(family = "Fraunces", face = 'bold',
+                                  size = 20,color = "black",margin = margin(0, 0, 0, 0)),
+        plot.subtitle = element_text(family = "poppins",
+                                     size = 15,color = "black",margin = margin(10.5, 0, 10, 0)),
+        axis.text.x = element_text(family = "poppins", face= "bold"),
+        axis.text.y = element_text(family = "poppins", face = "bold"),
+        plot.background = element_rect(fill = "white" )) +
+  geom_text(data = df[df$country == "Saudi Arabia",], aes(x = 2018.7, y = 6600, label = "Saudi Arabia", angle=75), color = "#8FC48D", family= poppins, size = 5.2)  +
+  geom_text(data = df[df$country == "U.A.E.",], aes(x = 2021, y = 5160, label = "UAE"), color = "#E1CA70",family= poppins, size = 5.2) +
+  geom_text(data = df[df$country == "U.K.",], aes(x = 2022, y = 3895, label = "UK"), color = "#89BAF2",family= poppins, size = 5.2) +
+  geom_text(data = df[df$country == "USA",], aes(x = 2002, y = 1600, label = "USA"), color = "#F7A2D8",family= poppins, size = 5.2)+
+  scale_y_continuous(position = "right")+
+  coord_cartesian(expand = FALSE)+
+  labs(x = NULL, y = NULL ,title= "Pakistan Remittance Trend 1970 - 2023",
+       subtitle = "Saudi Arabia and UAE are the largest remittance providers to Pakistan")
 
 
 ```
