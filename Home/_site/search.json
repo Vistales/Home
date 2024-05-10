@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Vistales",
+    "section": "",
+    "text": "This is your cover content. You can add images, text, or any other elements here.\n\n\nAdd more content here if needed."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "stories",
+    "section": "",
+    "text": "Blogs will appear here\nMy stories too",
+    "crumbs": [
+      "Home",
+      "stories"
+    ]
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "\nStories\n",
+    "section": "",
+    "text": "Blogs will appear here\nMy stories too\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nRemittances Sent to Pakistan Over Decades\n\n\n\n\n\n\nFazila Sadia\n\n\nMay 9, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/remit/index.html",
+    "href": "blog/remit/index.html",
+    "title": "Remittances Sent to Pakistan Over Decades",
+    "section": "",
+    "text": "Global Remittance Outlook 2022\nSending money back home is more than a simple financial transaction. It serves as a lifeline that connects families across borders, symbolizing love, sacrifice, and the unbreakable bond between migrants and their families. Remittances go beyond mere dollars and cents; they embody resilience, bridging the physical distance and nurturing hope for a better future.\nIn quotes:\nEach remittance carries with it the stories of sacrifice, resilience, and determination of those who seek better opportunities afar, while nurturing the dreams and aspirations of loved ones left behind.\nIn the digital age, remittances serve as a vital artery in the global economy, pumping billions of dollars annually across borders. ?@fig-global highlights this"
+  },
+  {
+    "objectID": "db.html",
+    "href": "db.html",
+    "title": "Interactive Dashboards",
+    "section": "",
+    "text": "Coming Soon"
+  },
+  {
+    "objectID": "charts.html",
+    "href": "charts.html",
+    "title": "Charts",
+    "section": "",
+    "text": "Coming Soon"
+  },
+  {
+    "objectID": "index.html#more-cover-content",
+    "href": "index.html#more-cover-content",
+    "title": "Vistales",
+    "section": "",
+    "text": "Add more content here if needed."
+  }
+]

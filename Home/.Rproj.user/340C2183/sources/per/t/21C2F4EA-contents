@@ -1,0 +1,38 @@
+---
+title: "Remittances Sent to Pakistan Over Decades" 
+author: "Fazila Sadia" 
+date: today 
+format:    
+  html:     
+    code-fold: true 
+execute:   
+  echo: false   
+  warning: false
+
+---
+
+### Global Remittance Outlook 2022
+
+Sending money back home is more than a simple financial transaction. It serves as a lifeline that connects families across borders, symbolizing love, sacrifice, and the unbreakable bond between migrants and their families. Remittances go beyond mere dollars and cents; they embody resilience, bridging the physical distance and nurturing hope for a better future.
+
+In quotes:
+
+Each remittance carries with it the stories of sacrifice, resilience, and determination of those who seek better opportunities afar, while nurturing the dreams and aspirations of loved ones left behind.
+
+
+
+In the digital age, remittances serve as a vital artery in the global economy, pumping billions of dollars annually across borders.  @fig-global highlights this
+
+```{r} 
+#| label: fig-global 
+#|fig-cap: "Global Remittance Trend"   
+
+library(readxl) 
+library(dplyr) 
+library(lubridate) 
+library(tidyverse) 
+library(stringr) 
+library(plotly) 
+library(shiny) 
+library(crosstalk)  
+```

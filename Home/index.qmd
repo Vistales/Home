@@ -1,0 +1,48 @@
+---
+title: "Vistales"
+subtitle: "Data-driven storytelling for Pakistan"
+page-layout: full
+---
+
+<style>
+body{
+  background-image: url("image.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+</style>
+
+<div id="box2">
+
+# Your Cover Content
+
+This is your cover content. You can add images, text, or any other elements here.
+
+## More Cover Content
+
+Add more content here if needed.
+
+</div>
+
+
+```{=html}
+<div class="card" style="max-width: 20rem; margin-top: 500px;" >
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h4 class="card-title">Primary card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+```
+
+
+```{=html}
+<div class="card border-primary mb-3" style="max-width: 20rem; margin-top: 50px;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h4 class="card-title">Primary card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+```

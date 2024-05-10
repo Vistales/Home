@@ -1,0 +1,15 @@
+{
+  "hash": "2abcef81c1d7277b2be63b0c5cc46eae",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Remittances Sent to Pakistan Over Decades\" \nauthor: \"Fazila Sadia\" \ndate: today \nformat:    \n  html:     \n    code-fold: true \nexecute:   \n  echo: false   \n  warning: false\n\n---\n\n\n### Global Remittance Outlook 2022\n\nSending money back home is more than a simple financial transaction. It serves as a lifeline that connects families across borders, symbolizing love, sacrifice, and the unbreakable bond between migrants and their families. Remittances go beyond mere dollars and cents; they embody resilience, bridging the physical distance and nurturing hope for a better future.\n\nIn quotes:\n\nEach remittance carries with it the stories of sacrifice, resilience, and determination of those who seek better opportunities afar, while nurturing the dreams and aspirations of loved ones left behind.\n\n\n\nIn the digital age, remittances serve as a vital artery in the global economy, pumping billions of dollars annually across borders.  @fig-global highlights this\n\n\n::: {.cell}\n\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

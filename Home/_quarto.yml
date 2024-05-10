@@ -1,0 +1,39 @@
+project:
+  type: website
+
+website:
+  title: ""
+  
+  navbar:
+    background: "#030D23"
+    foreground: "#ffff"
+    right:
+      - href: index.qmd
+        text: Home
+      - href: db.qmd
+        text: Dashboards
+      - href: charts.qmd
+        text: Charts
+      - href: blog/index.qmd
+        text: Stories
+      - href: about.qmd
+        text: Contact
+  page-footer: 
+    background: "#457075"
+    left: "Copyright 2024" 
+    right: 
+      - icon: github
+        href: https://github.com/
+      - icon: twitter 
+        href: https://twitter.com/ 
+      - icon: instagram
+        href: https://instagram.com/     
+  
+format:
+  html:
+    #theme: mint
+    css: styles.css
+    toc: false
+
+
+
