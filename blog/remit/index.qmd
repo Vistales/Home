@@ -1,5 +1,5 @@
 ---
-title: "Remittances Sent to Pakistan Over Decades" 
+title: "" 
 author: "Fazila Sadia" 
 date: today 
 format:    
@@ -10,6 +10,8 @@ execute:
   warning: false
 
 ---
+
+# Remittances Sent to Pakistan Over Decades
 
 ### Global Remittance Outlook 2022
 
