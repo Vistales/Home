@@ -8,7 +8,7 @@ website:
     background: "#030D23"
     foreground: "#ffff"
     right:
-      - href: index.qmd
+      - href: ./index.qmd
         text: Home
       - href: db.qmd
         text: Dashboards
