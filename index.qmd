@@ -1,6 +1,6 @@
 ---
 title: "Vistales"
-subtitle: "Data-driven storytelling for Pakistan ..."
+subtitle: "Data-driven  Pakistan ..."
 page-layout: full
 ---
 
