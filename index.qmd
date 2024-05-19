@@ -1,6 +1,6 @@
 ---
 title: "Vistales"
-subtitle: "Pakistan Data Insights: Unveiling the Stories Behind the Numbers"
+subtitle: "Pakistan's Data Insights: Unveiling the Stories Behind Numbers"
 page-layout: full
 ---
 

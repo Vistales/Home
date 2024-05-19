@@ -1,7 +1,20 @@
 ---
-title: ""
+title: "Charts"
+subtitle: ""
+listing:
+  contents: "index.qmd"
+  sort: "date desc"
+  categories: false
+  sort-ui: true
+  filter-ui: true
+  feed: true
+  fields: [image, title, description, categories]
+  type: grid
+page-layout: full
+
+comments: false
+format:
+  html:
+    css: chart.css
 ---
 
-                      
-                      
-                      Coming Soon

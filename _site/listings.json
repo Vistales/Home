@@ -4,5 +4,11 @@
     "items": [
       "/blog/remit/index.html"
     ]
+  },
+  {
+    "listing": "/chart/charts.html",
+    "items": [
+      "/chart/pyramid/index.html"
+    ]
   }
 ]

@@ -10,9 +10,9 @@ website:
     right:
       - href: ./index.qmd
         text: Home
-      - href: db.qmd
+      - href: db/db.qmd
         text: Dashboards
-      - href: charts.qmd
+      - href: chart/charts.qmd
         text: Charts
       - href: blog/index.qmd
         text: Stories

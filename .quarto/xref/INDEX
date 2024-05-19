@@ -19,5 +19,14 @@
   },
   "charts.qmd": {
     "charts.html": "def1c7e7"
+  },
+  "chart/charts.qmd": {
+    "charts.html": "c5ab7876"
+  },
+  "chart/pyramid/index.qmd": {
+    "index.html": "7c4d1c74"
+  },
+  "db/db.qmd": {
+    "db.html": "d7370a96"
   }
 }
