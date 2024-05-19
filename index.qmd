@@ -11,4 +11,39 @@ body{
   background-repeat: no-repeat;
 }
 
+
+
+
+.title {
+  font-size: 7vw;
+  font-style: bold;
+  text-align: left;
+  position: absolute;
+  top: 12%;
+  
+  bottom: 2%;
+  color: white;
+  font-family: canopy;
+  font-variant: large-caps;
+}
+
+
+.subtitle {
+  font-size: 2.5vw;
+  font-style: ;
+  text-align: left;
+  position: absolute;
+  
+  top: 160px;
+  bottom: 5%;
+  color: white;
+  font-family: canopy;
+  
+}
+.body{
+  background-image: url("image.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 </style>
