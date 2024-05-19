@@ -19,15 +19,15 @@ website:
       - href: about.qmd
         text: Contact
   page-footer: 
-    background: "#457075"
+    background: "#030D23"
     left: "Copyright 2024" 
     right: 
-      - icon: github
-        href: https://github.com/
+      - icon: linkedin
+        href: https://linkedin.com/company/vistales
       - icon: twitter 
-        href: https://twitter.com/ 
+        href: https://twitter.com/vistales_ 
       - icon: instagram
-        href: https://instagram.com/     
+        href: https://instagram.com/vistales_     
   
 format:
   html:

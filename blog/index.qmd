@@ -8,7 +8,7 @@ listing:
   sort-ui: true
   filter-ui: true
   feed: true
-  fields: [image, date, title, description, categories, author]
+  fields: [image, title, description, categories]
   type: grid
 page-layout: full
 
@@ -18,6 +18,3 @@ format:
     css: blog.css
 ---
 
-Blogs will appear here
-
-My stories too
