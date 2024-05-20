@@ -31,5 +31,8 @@
   },
   "chart/remit/remit.qmd": {
     "remit.html": "988c3be3"
+  },
+  "chart/remit/index.qmd": {
+    "index.html": "42f73bcd"
   }
 }
