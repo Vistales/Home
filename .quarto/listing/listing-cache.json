@@ -5,6 +5,9 @@
     ],
     "chart\\charts.qmd": [
       "index.qmd"
+    ],
+    "chart\\index.qmd": [
+      "index.qmd"
     ]
   }
 }

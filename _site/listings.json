@@ -11,5 +11,12 @@
       "/chart/pyramid/index.html",
       "/chart/remit/index.html"
     ]
+  },
+  {
+    "listing": "/chart/index.html",
+    "items": [
+      "/chart/pyramid/index.html",
+      "/chart/remit/index.html"
+    ]
   }
 ]
