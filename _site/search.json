@@ -9,9 +9,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "",
+    "title": "Contact us",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "LinkedIn: Vistales\nX: @vistales_\nInstagram: @vistales_"
   },
   {
     "objectID": "blog.html",
@@ -86,5 +86,12 @@
     "title": "",
     "section": "",
     "text": "Coming Soon"
+  },
+  {
+    "objectID": "chart/remit/remit.html",
+    "href": "chart/remit/remit.html",
+    "title": "",
+    "section": "",
+    "text": "Foreign remittances are a crucial component of foreign capital inflow in Pakistan, significantly influencing the country’s GDP growth and aiding in poverty alleviation.\nIn 2022, Pakistan stands as the sixth-largest recipient of remittances globally, with an impressive total of 29.8 billion USD flowing into the country from abroad. The bulk of these remittances originate from the Gulf countries, with Saudi Arabia and the United Arab Emirates emerging as leading contributors within this region. Moreover, the United Kingdom and the United States also stand out as key contributors to Pakistan’s remittance inflow."
   }
 ]

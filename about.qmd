@@ -1,9 +1,12 @@
 ---
-title: ""
+title: "Contact us"
+sidebar: false
+page-layout: article
+toc: false
 ---
 
-About this site
+- **LinkedIn:** [Vistales](https://linkedin.com/company/vistales)
 
-```{r}
-1 + 1
-```
+- **X:** [@vistales_](https://twitter.com/vistales_)
+
+- **Instagram:** [@vistales_](https://instagram.com/vistales_)
