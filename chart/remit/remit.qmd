@@ -1,4 +1,14 @@
+---
+title: "Currency in Motion"
 
+
+format:    
+  html:     
+    code-fold: true 
+execute:   
+  echo: false   
+  warning: false
+---
 
 
 ![Line chart showing remittance inflows to Pakistan](g.png)
