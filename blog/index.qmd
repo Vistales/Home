@@ -5,7 +5,7 @@ listing:
   contents: "index.qmd"
   sort: "date desc"
   categories: false
-  sort-ui: true
+  sort-ui: false
   filter-ui: true
   feed: true
   fields: [image, title, description, categories]

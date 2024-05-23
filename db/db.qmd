@@ -1,5 +1,19 @@
 ---
-title: ""
+title: "rret"
+listing:
+  contents: "db.qmd"
+  sort: "date desc"
+  categories: false
+  sort-ui: true
+  filter-ui: true
+  feed: true
+  fields: [image, title, description, categories]
+  type: grid
+page-layout: full
+
+comments: false
+format:
+  html:
 ---
 
                       
