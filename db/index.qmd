@@ -1,5 +1,5 @@
 ---
-title: "rret"
+title: "Dashboards"
 listing:
   contents: "index.qmd"
   sort: "date desc"
@@ -17,6 +17,4 @@ format:
     css: db.css
 ---
 
-                      
-                      
-                      Coming Soon
+              
