@@ -1,0 +1,200 @@
+--- 
+title: "Pakistan's Demographics Dashboard"
+author: "Vistales"
+format: dashboard
+orientation: columns
+#css: style.css
+execute: 
+  message: false
+  warning: false
+
+--- 
+
+
+```{r}
+library(tidyverse)
+library(showtext)
+library(plotly)
+library(webr)
+library(dplyr)
+library(scales)
+
+
+font_add_google("Fraunces", "title_font")
+font_add_google("Montserrat", "body_font")
+showtext_auto()
+
+body_font<- "body_font"
+title_font<- "title_font"
+
+```
+
+# Population
+
+## Column {width="50%"}
+
+### Row {height = "5%"}
+
+::: {.valuebox icon="people" color="blue"}
+Total population
+
+`r paste(241.49, "M")`
+:::
+
+::: {.valuebox icon="graph-up-arrow" color="pink"}
+Growth Rate
+
+`r paste(2.55, "%" )`
+:::
+
+```{r}
+
+library(tidyverse)
+library(showtext)
+library(plotly)
+library(webr)
+library(dplyr)
+library(scales)
+
+df<-data.frame(variable = c("Urban", "Rural"),
+           value = c(93750724,147748707))
+
+plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('#F3C052', '#57B39C')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) 
+```
+
+### Column 
+
+### Row {height = "8%"}
+
+
+
+
+```{r}
+
+#| title: Place of Living Provincial Level
+inner_data <- data.frame(
+  state = rep(c("Punjab", "Sindh", "Balochistan", "KPK", "Federal"), 2),
+  variable = rep(c( "Rural", "Urban"), each = 5),
+  value = c(75715270, 51973652, 25771071, 29925076, 10282574, 4611828, 34724801, 6131296, 1254991, 1108872)
+)
+
+  inner_data
+  place<- plot_ly(inner_data, y = ~state, x = ~value,
+                       type = 'bar', color = ~variable, orientation = 'h') %>%
+layout(
+    barmode = "stack", showlegend = FALSE, showline = FALSE,
+  xaxis = list(showticklabels = FALSE, title = ""),
+    yaxis =  list(title = "")
+  )
+inner_data
+place
+
+
+
+library(packcircles)
+library(webr)
+library(dplyr)
+library(scales)
+
+
+
+pop_df<-data.frame(
+state = c("Punjab", "Sindh", "Balochistan", "KPK", "ICT"),
+value = c(127688922, 55696147, 1489402,40856097, 2363863)
+)
+pop_df$packing <- circleProgressiveLayout(pop_df$value, sizetype = 'area')
+df.gg<-circleLayoutVertices(pop_df$packing, npoints=500)
+# Plot circle packing
+
+circle<-ggplot() + 
+  geom_polygon(data = df.gg, aes(x, y, group = id, fill=id), alpha = 0.6)+
+  scale_fill_viridis_c()+
+  geom_text(data = pop_df, aes(x=packing$x, y=packing$y, label = paste(state, value),sep="\n"), size=7, color="black") +
+  theme_void() + 
+  theme(legend.position="none", plot.margin=unit(c(0,0,0,0),"cm") ) + 
+  coord_equal()
+
+circle
+```
+
+
+## Column {height = "100%"}
+```{r}
+#| title: Population Distribution by Age 
+#| width: 70%
+#| height: 80%
+library(dplyr)
+library(showtext)
+library(patchwork)
+library(plotly)
+
+
+
+pop<-read.csv("population table.csv")
+
+df<- pop %>%
+  select(Age.Groups..Years., Population, X, X.1) %>%
+  filter(!row_number() %in% c(1,3)) %>%
+  rename(age = Age.Groups..Years., male = X, fem = X.1, total = Population ) %>%
+  filter(!row_number() %in% c(1,2)) 
+
+
+df$age[df$age == '0'] <- '00 - 00'
+df$age[df$age == '1'] <- '01- 1+'
+df$age[df$age == '65+'] <- '65 - 65+'
+
+
+## female ###
+
+fem<-ggplot(data = df, aes(x = age, y = as.numeric(fem))) +ylab("female (%)")+
+  geom_hline(yintercept = c(2,4,6,8),   color = "gray", size = 0.5)+
+  geom_bar(stat = "identity", fill = "#EA498C") +
+  geom_text(aes(label = fem ),hjust = 0 ,size = 9)+
+  #geom_area()+
+  
+  #theme_void()+
+  theme(axis.title.x = element_text(family= body_font, size=  18), 
+        axis.text.x = element_text(size = 20),
+        axis.ticks = element_blank(),
+        axis.title.y = element_blank(), 
+        axis.text.y = element_text(face ="bold",size= 15), 
+        panel.grid = element_blank(),
+        panel.background = element_rect(fill = "#E8F6FF"),
+        plot.background = element_rect(fill = "#E8F6FF"),
+        legend.position = 'none',
+        plot.margin = unit(c(1,0,1,1), "mm"))+coord_flip(ylim =c(0.4, 8.2))
+  
+  
+### male ###
+
+male<-ggplot(data = df , aes(x =age, y = as.numeric(male))) +
+  geom_hline(yintercept = c(2,4,6,8),  color = "gray", size = 0.8)+
+  geom_bar(stat = "identity", fill = "#6784AA") +
+  ylab("male (%)")+
+  geom_text(aes(label = male),hjust = 1 ,size = 9)+
+  
+  theme(axis.title.x = element_text(family= body_font, size=  18), 
+        axis.title.y = element_blank(), 
+        axis.text.y = element_blank(), 
+         axis.text.x = element_text(size = 18), 
+        panel.grid = element_blank(),
+        axis.ticks= element_blank(), 
+        legend.position = 'none',
+        panel.background = element_rect(fill = "#E8F6FF"),
+        plot.background = element_rect(fill = "#E8F6FF"),
+        panel.margin = unit(c(1,0,1,0), "mm"),
+        plot.margin = margin(0,0,0,0),
+        )+ scale_y_reverse(labels =  )+ coord_flip(ylim =c(8,0.5))
+
+
+g<-male + fem +  plot_layout(ncol =2, widths = c(0.5, 0.5))
+
+g_plus<- g + 
+  labs(
+       subtitle = "Age in Years")+
+  theme(plot.subtitle = element_text(family = body_font,size = 18, margin = margin(0, 0,0,-40)),
+        plot.background = element_rect(fill = "#E8F6FF", colour = "#E8F6FF"),
+        )
+g_plus
+```
+
