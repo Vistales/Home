@@ -1,7 +1,13 @@
 --- 
 title: "Pakistan's Demographics Dashboard"
-author: "Vistales"
-format: dashboard
+author: ""
+navbar: false
+format: 
+  dashboard:
+    logo: pop2.png
+    
+    
+
 orientation: columns
 #css: style.css
 execute: 
@@ -47,19 +53,18 @@ Growth Rate
 `r paste(2.55, "%" )`
 :::
 
-```{r}
+```{r,out.width='100%'}
 
 library(tidyverse)
-library(showtext)
 library(plotly)
-library(webr)
 library(dplyr)
-library(scales)
 
 df<-data.frame(variable = c("Urban", "Rural"),
            value = c(93750724,147748707))
 
-plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('#F3C052', '#57B39C')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) 
+plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('#F3C052', '#57B39C')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) %>%
+layout(margin = list(l = 20, r = 20)) %>%
+config(displayModeBar = FALSE)
 ```
 
 ### Column 
@@ -78,7 +83,6 @@ inner_data <- data.frame(
   value = c(75715270, 51973652, 25771071, 29925076, 10282574, 4611828, 34724801, 6131296, 1254991, 1108872)
 )
 
-  inner_data
   place<- plot_ly(inner_data, y = ~state, x = ~value,
                        type = 'bar', color = ~variable, orientation = 'h') %>%
 layout(
@@ -86,7 +90,6 @@ layout(
   xaxis = list(showticklabels = FALSE, title = ""),
     yaxis =  list(title = "")
   )
-inner_data
 place
 
 
@@ -198,3 +201,80 @@ g_plus<- g +
 g_plus
 ```
 
+
+
+
+# Households
+
+## Row 
+ 
+District with higest number of households
+Source of  drinking water lighting and cooking fuel
+
+
+### Row
+
+#### Row
+```{r}
+#| title: Source of Drinking Water
+
+#Data source: https://www.pbs.gov.pk/sites/default/files/tables/housing/HOUSING%20UNITS%20BY%20SOURCE%20OF%20DRINKING%20WATER%2C%20LIGHTING%20AND%20COOKING%20FUEL.pdf  
+
+
+df<- data.frame(
+ state = c("KPK", "FATA", "Punjab","Sindh", "Balochistan", "ICT")  ,
+source = rep(c("pipe", "hand-pump", "well", "others"),  each = 6),
+value = c(39.46,19.31,26.52,41.70,29.64,63.33, 10.92, 3.13, 65.65,36.51,4.49,6.87,26.79,35.12,4.23, 8.54,30.16,26.19, 22.84,42.45, 3.60,13.24,35.71, 3.62 )
+)
+
+
+plot_ly(df, x = ~value, y = ~state,
+                       type = 'bar', color = ~source, orientation = 'h') %>%
+layout(
+    barmode = "stack", showlegend = FALSE, showline = FALSE,
+  xaxis = list(showticklabels = FALSE, title = ""),
+    yaxis =  list(title = "")
+  )
+
+
+```
+#### Row
+
+```{r}
+#| title: Source of Lighting
+df<- data.frame(
+ state = c("KPK", "FATA", "Punjab","Sindh", "Balochistan", "ICT")  ,
+source = rep(c("electricity", "kerosene oil", "others"),  each = 6),
+value = c(72.19, 61.97, 72.49, 70.08,46.62, 91.48, 24.51, 36.14, 26.61,27.78, 49.35,8.02,  3.3, 1.89, 0.91, 2.14, 4.02, 0.51))
+
+
+
+plot_ly(df, x = ~value, y = ~state,
+                       type = 'bar', color = ~source, orientation = 'h') %>%
+layout(
+    barmode = "stack", showlegend = FALSE, showline = FALSE,
+  xaxis = list(showticklabels = FALSE, title = ""),
+    yaxis =  list(title = "")
+  )
+
+```
+
+#### Row
+```{r}
+#| title: Cooking Fuel
+df<- data.frame(
+ state = c("KPK", "FATA", "Punjab","Sindh", "Balochistan", "ICT")  ,
+source = rep(c("owned", "rented", "rent free"),  each = 6),
+value = c(83.67, 91.68, 68.30, 60.19, 81.56, 38.15, 2.39, 1.74, 3.78, 4.18, 4.35, 4.43,9.80, 1.28, 17.67,  3.2, 4.25, 1.41 ))
+
+
+
+plot_ly(df, x = ~value, y = ~state,
+                       type = 'bar', color = ~source, orientation = 'h') %>%
+layout(
+    barmode = "stack", showlegend = FALSE, showline = FALSE,
+  xaxis = list(showticklabels = FALSE, title = ""),
+    yaxis =  list(title = "")
+  )
+
+```
