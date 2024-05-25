@@ -2,7 +2,7 @@
 
 
 h1 {
-    color: #E9D2C0;
+    color: #1F2041;
 }
 
 .quarto-title .quarto-categories {
@@ -10,7 +10,7 @@ h1 {
 }
 
 h1.title, .title.h1 {
-    color: #E9D2C0;
+    color: #1F2041;
     text-align: left;
 }
 
@@ -25,7 +25,7 @@ h1.title, .title.h1 {
 }
 
 .main-date {
-    color: #E9D2C0;
+    color:#1F2041;
     background-color: #1F2041;
     border-color: #1F2041;
     border-radius: 15px;
@@ -49,8 +49,8 @@ h1.title, .title.h1 {
 
 .quarto-title .quarto-categories .quarto-category {
     font-size: 0.75em;
-    opacity: 1;
-    color: #E9D2C0;
+    opacity: 5;
+    color: #1F2041;
 }
 
 .h4 {
@@ -65,7 +65,7 @@ h1.title, .title.h1 {
             margin: 0.5em 0;
 
             .post-category {
-                color: #E9D2C0;
+                color: #1F2041;
                 background-color: #1F2041;
                 border: 1px solid #1F2041;
                 border-radius: 5px;
@@ -85,6 +85,6 @@ h1.title, .title.h1 {
 .page-item .page-link {
   /*  border-radius: 12px; */
     border: none;
-    background-color: #E9D2C0;
+    background-color: #1F2041;
 }
 ---

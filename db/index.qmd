@@ -1,11 +1,11 @@
 ---
-title: "Dashboards"
+title: <p class="center-text">Dashboards</p>
 listing:
   contents: "index.qmd"
   sort: "date desc"
   categories: false
-  sort-ui: true
-  filter-ui: true
+  #sort-ui: true
+  #filter-ui: true
   feed: true
   fields: [image, title, description, categories]
   type: grid
@@ -17,4 +17,11 @@ format:
     css: db.css
 ---
 
-              
+**Unlock the power of data to shape the future of Pakistan **
+
+Vistales specializes in creating insightful dashboards that bring Pakistan's data to life. By transforming complex datasets into intuitive visualizations, we make information accessible and actionable. Our dashboards offer a clear view of key metrics, helping you make informed decisions that drive progress and innovation.
+
+Discover the stories behind the numbers. Click on our dashboards to explore topics based on your interest.
+
+
+
