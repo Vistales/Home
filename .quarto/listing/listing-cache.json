@@ -8,6 +8,9 @@
     ],
     "chart\\index.qmd": [
       "index.qmd"
+    ],
+    "db\\index.qmd": [
+      "index.qmd"
     ]
   }
 }

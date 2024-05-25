@@ -8,11 +8,11 @@ website:
     background: "#030D23"
     foreground: "#ffff"
     right:
-      - href: ./index.qmd
+      - href: index.qmd
         text: Home
-      - href: db/db.qmd
+      - href: db/index.qmd
         text: Dashboards
-      - href: chart/charts.qmd
+      - href: chart/index.qmd
         text: Charts
       - href: blog/index.qmd
         text: Stories

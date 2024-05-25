@@ -1,7 +1,7 @@
 ---
 title: "rret"
 listing:
-  contents: "db.qmd"
+  contents: "index.qmd"
   sort: "date desc"
   categories: false
   sort-ui: true
@@ -14,6 +14,7 @@ page-layout: full
 comments: false
 format:
   html:
+    css: db.css
 ---
 
                       

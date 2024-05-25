@@ -37,5 +37,11 @@
   },
   "chart/index.qmd": {
     "index.html": "fbf05716"
+  },
+  "db/Population/index.qmd": {
+    "index.html": "0b2f8eaa"
+  },
+  "db/index.qmd": {
+    "index.html": "bcf19220"
   }
 }

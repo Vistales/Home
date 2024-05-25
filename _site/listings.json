@@ -18,5 +18,11 @@
       "/chart/pyramid/index.html",
       "/chart/remit/index.html"
     ]
+  },
+  {
+    "listing": "/db/index.html",
+    "items": [
+      "/db/Population/index.html"
+    ]
   }
 ]
