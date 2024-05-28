@@ -1,0 +1,17 @@
+quarto-dashboard value-box .value-box-value {
+    font-size: clamp(.1em, 5cqw, 2.5em) !important;
+}
+
+quarto-dashboard value-box .value-box-icon {
+    size: clamp(.1em, 5cqw,1.5em) !important;
+}
+
+style>
+/* Adjusting the vertical spacing within the value box */
+.valuebox-icon {
+  margin-bottom: 0 !important; /* Adjusts the space below the icon */
+}
+.valuebox-content {
+  margin-top: 0 !important; /* Adjusts the space above the content */
+}
+</style>

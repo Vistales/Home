@@ -4,7 +4,7 @@ author: ""
 navbar: false
 format: 
   dashboard:
-    logo: pop2.png
+    logo: pop.png
     
     
 
@@ -18,10 +18,13 @@ execute:
 
 
 ```{r}
+#|include: false
 library(tidyverse)
 library(showtext)
+library(packcircles)
 library(plotly)
 library(webr)
+library(ggplot2)
 library(dplyr)
 library(scales)
 
@@ -37,24 +40,32 @@ title_font<- "title_font"
 
 # Population
 
-## Column {width="50%"}
+## Column 
 
-### Row {height = "5%"}
+### Row {height="32%"}
 
-::: {.valuebox icon="people" color="blue"}
+::: {.valuebox icon="globe" color="#509475" margin-bottom="0px"}
+Global Rank
+
+`r paste(6, "th")`
+::: 
+
+::: {.valuebox icon="people" color="#e3861d"}
 Total population
 
 `r paste(241.49, "M")`
 :::
 
-::: {.valuebox icon="graph-up-arrow" color="pink"}
+::: {.valuebox icon="graph-up-arrow" color="#508094"}
 Growth Rate
 
 `r paste(2.55, "%" )`
 :::
 
-```{r,out.width='100%'}
 
+### Row {.tabset}
+```{r}
+#| title: Region
 library(tidyverse)
 library(plotly)
 library(dplyr)
@@ -62,66 +73,93 @@ library(dplyr)
 df<-data.frame(variable = c("Urban", "Rural"),
            value = c(93750724,147748707))
 
-plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('#F3C052', '#57B39C')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) %>%
+plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('goldenrod', 'navy')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) %>%
 layout(margin = list(l = 20, r = 20)) %>%
 config(displayModeBar = FALSE)
 ```
 
-### Column 
-
-### Row {height = "8%"}
-
-
 
 
 ```{r}
+#| title: Province-wise Urban-Rural Distribution
 
-#| title: Place of Living Provincial Level
 inner_data <- data.frame(
-  state = rep(c("Punjab", "Sindh", "Balochistan", "KPK", "Federal"), 2),
-  variable = rep(c( "Rural", "Urban"), each = 5),
+  state = rep(c("Punjab", "Sindh", "Balochistan", "KPK", "ICT"), each = 2),
+  variable = rep(c("Rural", "Urban"), times = 5),
   value = c(75715270, 51973652, 25771071, 29925076, 10282574, 4611828, 34724801, 6131296, 1254991, 1108872)
 )
 
-  place<- plot_ly(inner_data, y = ~state, x = ~value,
-                       type = 'bar', color = ~variable, orientation = 'h') %>%
-layout(
-    barmode = "stack", showlegend = FALSE, showline = FALSE,
-  xaxis = list(showticklabels = FALSE, title = ""),
-    yaxis =  list(title = "")
+# Calculate percentages
+inner_data <- inner_data %>%
+  group_by(state) %>%
+  mutate(total = sum(value),
+         percentage = round((value / total) * 100, 2),
+         hover_text = paste(variable, "<br>Population:", value, "<br>Percentage:", percentage, "%"))
+
+# Define colors
+colors <- c("Rural" = "goldenrod", "Urban" = "navy")
+
+# Create the plot
+place <- plot_ly(inner_data, y = ~state, x = ~percentage,
+                 type = 'bar', color = ~variable, colors = colors, orientation = 'h',
+                 text = ~hover_text, hoverinfo = 'text') %>%
+  layout(
+    barmode = "stack", showline = FALSE,showlegend =FALSE,
+    xaxis = list(showticklabels = FALSE, title = ""),
+    yaxis = list(title = "")
+    #legend = list(orientation = "h", y = 1.1, x = 0.5, xanchor = "center", yanchor = "bottom")
+
+  ) %>%
+  config(displayModeBar = FALSE) %>%
+  style(
+    hoverlabel = list(bgcolor = "beige")
   )
+
+# Display the plot
 place
 
+```
+
+```{r}
+#| title: Provincial
 
 
-library(packcircles)
-library(webr)
-library(dplyr)
-library(scales)
-
-
-
-pop_df<-data.frame(
-state = c("Punjab", "Sindh", "Balochistan", "KPK", "ICT"),
-value = c(127688922, 55696147, 1489402,40856097, 2363863)
+# Sample data
+pop_df <- data.frame(
+  state = c("Punjab", "Sindh", "Balochistan", "KPK", "ICT"),
+  value = c(127688922, 55696147, 1489402, 40856097, 2363863)
 )
+
+# Generate circle packing layout
 pop_df$packing <- circleProgressiveLayout(pop_df$value, sizetype = 'area')
-df.gg<-circleLayoutVertices(pop_df$packing, npoints=500)
-# Plot circle packing
+df.gg <- circleLayoutVertices(pop_df$packing, npoints=500)
 
-circle<-ggplot() + 
-  geom_polygon(data = df.gg, aes(x, y, group = id, fill=id), alpha = 0.6)+
-  scale_fill_viridis_c()+
-  geom_text(data = pop_df, aes(x=packing$x, y=packing$y, label = paste(state, value),sep="\n"), size=7, color="black") +
-  theme_void() + 
-  theme(legend.position="none", plot.margin=unit(c(0,0,0,0),"cm") ) + 
-  coord_equal()
+# Convert data for Plotly
+circle_data <- df.gg %>%
+  mutate(state = factor(id, labels = pop_df$state))
 
-circle
+# Define colors
+colors <- c("#89CFF0", "green", "#0D47A1", "orange", "#FFCF70")
+
+
+# Create the Plotly plot
+plot_ly() %>%
+  add_polygons(data = circle_data, x = ~x, y = ~y, color = ~state, colors = colors, 
+               showlegend = FALSE, alpha = 0.8, line = list(width = 1)) %>%
+  add_text(data = pop_df, x = ~packing$x, y = ~packing$y, text = ~paste(state, value, sep="\n"),
+           textposition = 'middle center', textfont = list(size = 16, color = 'black')) %>%
+  layout(
+    xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE, title=""),
+    yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE,title=""),
+    plot_bgcolor = 'rgba(0,0,0,0)',
+    paper_bgcolor = 'rgba(0,0,0,0)'
+  ) %>%
+  config(displayModeBar = FALSE)
+
 ```
 
 
-## Column {height = "100%"}
+## Column
 ```{r}
 #| title: Population Distribution by Age 
 #| width: 70%
@@ -200,7 +238,6 @@ g_plus<- g +
         )
 g_plus
 ```
-
 
 
 
