@@ -1,49 +1,37 @@
 ---
-title: "Vistales"
-subtitle: "Pakistan's Data Insights: Unveiling the Stories Behind Numbers"
 page-layout: full
+format: 
+  html:
+    css: styles.css
+    
+embed-resources: true
 ---
-
-<style>
-body{
-  background-image: url("image.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
+<div class="container">
+  <div class="text text-left" id="text-left">Visual</div>
+  <div class="text text-right" id="text-right">Tales</div>
+  <div class="text" id="combined">Vistales</div>
+  <div class="mini" id="after">Pakistan’s Data Insights: Unveiling the Stories Behind Numbers</div>
+</div>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const leftText = document.getElementById('text-left');
+    const rightText = document.getElementById('text-right');
+    const combinedText = document.getElementById('combined');
+    const afterText = document.getElementById('after');
 
-.title {
-  font-size: 7vw;
-  font-style: bold;
-  text-align: left;
-  position: absolute;
-  top: 12%;
-  
-  bottom: 2%;
-  color: white;
-  font-family: canopy;
-  font-variant: large-caps;
-}
+    // When the right text animation ends, hide both texts and show the combined text
+    rightText.addEventListener('animationend', function() {
+      leftText.style.display = 'none';
+      rightText.style.display = 'none';
+      combinedText.classList.add('show');
+      afterText.classList.add('show');
+    });
+  });
+</script>
 
 
-.subtitle {
-  font-size: 2.5vw;
-  font-style: ;
-  text-align: left;
-  position: absolute;
-  
-  top: 160px;
-  bottom: 5%;
-  color: white;
-  font-family: canopy;
-  
-}
-.body{
-  background-image: url("image.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
+<div class = "first">
 
-</style>
+</div>

@@ -1,7 +1,156 @@
-/* css styles */
+@font-face {
+  font-family: "myfont";
+  src: url('gb.ttf') format('truetype'); /* Ensure the path and format are correct */
+}
+
+/* Gradient background animation */
+@keyframes gradientBackground {
+  0% {
+    background: linear-gradient(125deg, #F9CEDC 0%, #fad0c4 100%);
+  }
+  35% {
+    background: linear-gradient(25deg, #E4E4F5 0%, #fbc2eb 100%);
+  }
+  50% {
+    background: linear-gradient(25deg, #fad0c4 0%, #ffd1ff 100%);
+  }
+  75% {
+    background: linear-gradient(25deg, #CEE9F9 0%, #fbc2eb 100%);
+  }
+  100% {
+    background: linear-gradient(65deg, #E8EEC5 0%, #fad0c4 100%);
+  }
+}
+
+/* Apply the gradient animation to the body */
+body {
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  animation: gradientBackground 30s linear infinite;
+  font-family: "myfont";
+}
 
 
-/* navbar */.navbar-title {  font-family: "fraunces";}
+.first {
+  margin-top: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  font-family: "myfont";
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 12vw;
+  font-weight: bold;
+  
+  color: black;
+  position: absolute;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+
+.mini {
+  font-size: 2vw;
+  font-weight: light;
+  color: black;
+  position: relative;
+  top: 180px;
+  text-align: justify-content;
+}
+
+.text-left {
+  animation-name: textLeft;
+}
+
+.text-right {
+  animation-name: textRight;
+}
+
+@keyframes textLeft {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 18%;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes textRight {
+   0% {
+    right: -50%;
+  }
+
+ 
+  100% {
+    right: 20%;
+    transform: translateX(50%);
+  }
+}
+
+#combined {
+  display: none;
+}
+
+#after{
+  display: none;
+}
+
+
+@keyframes combineText {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#combined.show {
+  display: block;
+  animation: combineText 1s forwards;
+}
+
+
+
+@keyframes afterText {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#after.show {
+  display: block;
+  animation: afterText 4s backwards;
+}
+
+
+
+
+/* navbar */.navbar-title {  font-family: Sans-Serif;}
 
 .navbar-dark .navbar-brand {
   text-align: right;
@@ -22,10 +171,12 @@
 
 
 .footer {
-  margin-top: 0px;
-
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
 }
 
 .page-footer-title {
-  font-family: "fraunces";
+  font-family: Sans-Serif;
 }

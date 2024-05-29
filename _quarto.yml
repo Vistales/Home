@@ -5,7 +5,7 @@ website:
   title: ""
   
   navbar:
-    background: "#030D23"
+    background: "transparent"
     foreground: "#ffff"
     right:
       - href: index.qmd
@@ -19,7 +19,8 @@ website:
       - href: about.qmd
         text: Contact
   page-footer: 
-    background: "#030D23"
+    background: "transparent"
+    foreground: "black"
     left: "Copyright 2024" 
     right: 
       - icon: linkedin
