@@ -1,27 +1,11 @@
----
 
-
-h1 {
-    color: #E9D2C0;
-}
-
-.quarto-title .quarto-categories {
-    color: white;
-}
-
-h1.title, .title.h1 {
-    color: #E9D2C0;
-    text-align: left;
-}
-
+/* Style center-aligned text */
 .center-text {
   text-align: center;
-}
-
-.li2 {
-    margin-bottom: 30px;
-    border: 3px solid #1F2041;
-    padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  font-family: fraunces;
 }
 
 .main-date {

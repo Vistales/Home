@@ -31,9 +31,9 @@
 body {
   margin: 0;
   height: 100vh;
+  font-family: Georgia, Sans-Serif;
   justify-content: center;
   align-items: center;
-  font-family: myfont;
   animation: gradientBackground 30s linear infinite;
 }
 
@@ -57,7 +57,7 @@ body {
 .text {
   font-size: 12vw;
   font-weight: bold;
-  
+  font-family: myfont;
   color: black;
   position: absolute;
   animation-duration: 2s;
@@ -67,6 +67,7 @@ body {
 
 
 .mini {
+  font-family: myfont;
   font-size: 2vw;
   font-weight: light;
   color: black;
@@ -182,7 +183,6 @@ body {
   position: fixed;
   bottom: 0;
   font-family: Georgia, serif;
-  font-weight: bold;
 }
 
 .page-footer-title {

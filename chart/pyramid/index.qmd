@@ -4,6 +4,7 @@ title: "Population Distribution by Age"
 format:    
   html:     
     code-fold: true 
+mainfont: Georgia
 execute:   
   echo: false   
   warning: false

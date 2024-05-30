@@ -2,7 +2,7 @@
 title: <p class="center-text">Dashboards</p>
 listing:
   contents: "index.qmd"
-  sort: "date desc"
+  #sort: "date desc"
   categories: false
   #sort-ui: true
   #filter-ui: true

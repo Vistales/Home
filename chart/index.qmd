@@ -1,6 +1,5 @@
 ---
-title: "Charts"
-subtitle: ""
+title: <p class="center-text">Charts</p>
 listing:
   contents: "index.qmd"
   sort: "date desc"
