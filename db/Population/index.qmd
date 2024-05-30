@@ -1,15 +1,18 @@
 --- 
 title: "Pakistan's Demographics Dashboard"
-author: ""
+
 navbar: false
 format: 
   dashboard:
     logo: pop.png
-    
-    
+    css: style.css
+    nav-buttons:
+      - icon: gitlab
+        href: https://vistales.github.io/Home/_site/db/
+            
+backgroundcolor: white
 
 orientation: columns
-#css: style.css
 execute: 
   message: false
   warning: false

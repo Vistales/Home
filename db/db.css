@@ -1,13 +1,29 @@
 /* Set background color animation */
-@keyframes backgroundAnimation {
-  0% { background-color: #E6E6C5; }
-  50% { background-color: #EECAD4; }
-  100% { background-color: #ABBAED; }
+/* Gradient background animation */
+@keyframes gradientBackground {
+  0% {
+    background: linear-gradient(125deg, #F9CEDC 0%, #fad0c4 100%);
+  }
+  35% {
+    background: linear-gradient(25deg, #E4E4F5 0%, #fbc2eb 100%);
+  }
+  50% {
+    background: linear-gradient(25deg, #fad0c4 0%, #ffd1ff 100%);
+  }
+  75% {
+    background: linear-gradient(25deg, #CEE9F9 0%, #fbc2eb 100%);
+  }
+  100% {
+    background: linear-gradient(65deg, #E8EEC5 0%, #fad0c4 100%);
+  }
 }
+
 
 /* Apply background color animation to the body */
 body {
-  animation: backgroundAnimation 10s infinite alternate;
+  animation: gradientBackground 30s linear infinite;
+  font-family: Georgia, serif;
+  font-weight: 500;
 }
 
 /* Style center-aligned text */
@@ -16,7 +32,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: black;
-  font-family: "Fraunces";
+  font-family: myfont;
 }
 
 /* Style colored boxes */

@@ -3,6 +3,11 @@
   src: url('gb.ttf') format('truetype'); /* Ensure the path and format are correct */
 }
 
+@font-face {
+  font-family: "fraunces";
+  src: url('fraunces.ttf') format('truetype'); /* Ensure the path and format are correct */
+}
+
 /* Gradient background animation */
 @keyframes gradientBackground {
   0% {
@@ -28,8 +33,8 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  font-family: myfont;
   animation: gradientBackground 30s linear infinite;
-  font-family: "myfont";
 }
 
 
@@ -38,7 +43,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: beige;
-  font-family: "myfont";
 }
 
 .container {
@@ -167,6 +171,8 @@ body {
 .navbar-nav .nav-item{
   padding-left: 10px;
   padding-right: 10px;
+  font-family: Georgia, serif;
+  font-size: 20px;
 } 
 
 
@@ -175,6 +181,8 @@ body {
   text-align: center;
   position: fixed;
   bottom: 0;
+  font-family: Georgia, serif;
+  font-weight: bold;
 }
 
 .page-footer-title {
