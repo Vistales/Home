@@ -2,8 +2,8 @@
 page-layout: full
 format: 
   html:
+    link-external-newwindow: true
     css: styles.css
-    
 embed-resources: true
 ---
 <div class="container">
