@@ -10,7 +10,8 @@
       "index.qmd"
     ],
     "db\\index.qmd": [
-      "index.qmd"
+      "index.qmd",
+      "**/index.qmd"
     ]
   }
 }

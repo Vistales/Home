@@ -1,6 +1,5 @@
 --- 
 title: "Pakistan's Demographics Dashboard"
-
 navbar: false
 format: 
   dashboard:
@@ -9,14 +8,12 @@ format:
     nav-buttons:
       - icon: gitlab
         href: https://vistales.github.io/Home/_site/db/
-            
+image: "pop.png"
 backgroundcolor: white
-
 orientation: columns
 execute: 
   message: false
   warning: false
-
 --- 
 
 
@@ -76,9 +73,11 @@ library(dplyr)
 df<-data.frame(variable = c("Urban", "Rural"),
            value = c(93750724,147748707))
 
-plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('goldenrod', 'navy')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) %>%
+div<-plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('goldenrod', 'navy')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) %>%
 layout(margin = list(l = 20, r = 20)) %>%
 config(displayModeBar = FALSE)
+
+div
 ```
 
 
@@ -146,7 +145,7 @@ colors <- c("#89CFF0", "green", "#0D47A1", "orange", "#FFCF70")
 
 
 # Create the Plotly plot
-plot_ly() %>%
+circle<-plot_ly() %>%
   add_polygons(data = circle_data, x = ~x, y = ~y, color = ~state, colors = colors, 
                showlegend = FALSE, alpha = 0.8, line = list(width = 1)) %>%
   add_text(data = pop_df, x = ~packing$x, y = ~packing$y, text = ~paste(state, value, sep="\n"),
@@ -158,6 +157,8 @@ plot_ly() %>%
     paper_bgcolor = 'rgba(0,0,0,0)'
   ) %>%
   config(displayModeBar = FALSE)
+
+circle
 
 ```
 
