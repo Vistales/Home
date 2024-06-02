@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: ""
+  google-analytics: "G-X7Q4RX6KPB"
   
   navbar:
     background: "transparent"
@@ -35,6 +35,8 @@ format:
     #theme: mint
     css: styles.css
     toc: false
+    #include-in-header: gtm_code_head.html
+    #include-before-body: gtm_code_body.html
 
 
 

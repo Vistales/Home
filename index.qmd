@@ -32,6 +32,3 @@ embed-resources: true
 </script>
 
 
-<div class = "first">
-
-</div>
