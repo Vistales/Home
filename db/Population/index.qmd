@@ -6,7 +6,7 @@ format:
     logo: pop.png
     css: style.css
     nav-buttons:
-      - icon: gitlab
+      - icon: box-arrow-left
         href: https://vistales.github.io/Home/_site/db/
 image: "pop.png"
 backgroundcolor: white
@@ -123,7 +123,7 @@ place
 ```
 
 ```{r}
-#| title: Provincial
+#| title: Provincial Population
 
 
 # Sample data
