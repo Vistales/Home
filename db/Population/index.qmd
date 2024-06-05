@@ -9,7 +9,7 @@ format:
       - icon: box-arrow-left
         href: https://vistales.github.io/Home/_site/db/
 image: "pop.png"
-backgroundcolor: white
+backgroundcolor: "#8697C3"
 orientation: columns
 execute: 
   message: false
@@ -44,19 +44,19 @@ title_font<- "title_font"
 
 ### Row {height="32%"}
 
-::: {.valuebox icon="globe" color="#509475" margin-bottom="0px"}
+::: {.valuebox icon="globe" color="#F2BA5E" margin-bottom="0px"}
 Global Rank
 
 `r paste(6, "th")`
 ::: 
 
-::: {.valuebox icon="people" color="#e3861d"}
+::: {.valuebox icon="people" color="#6784AA"}
 Total population
 
 `r paste(241.49, "M")`
 :::
 
-::: {.valuebox icon="graph-up-arrow" color="#508094"}
+::: {.valuebox icon="graph-up-arrow" color="#E7498C"}
 Growth Rate
 
 `r paste(2.55, "%" )`
@@ -73,7 +73,7 @@ library(dplyr)
 df<-data.frame(variable = c("Urban", "Rural"),
            value = c(93750724,147748707))
 
-div<-plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('goldenrod', 'navy')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) %>%
+div<-plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('#E7498C', '#6784AA')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) %>%
 layout(margin = list(l = 20, r = 20)) %>%
 config(displayModeBar = FALSE)
 
@@ -99,7 +99,7 @@ inner_data <- inner_data %>%
          hover_text = paste(variable, "<br>Population:", value, "<br>Percentage:", percentage, "%"))
 
 # Define colors
-colors <- c("Rural" = "goldenrod", "Urban" = "navy")
+colors <- c("Rural" = "#E7498C", "Urban" = "#6784AA")
 
 # Create the plot
 place <- plot_ly(inner_data, y = ~state, x = ~percentage,
@@ -141,7 +141,7 @@ circle_data <- df.gg %>%
   mutate(state = factor(id, labels = pop_df$state))
 
 # Define colors
-colors <- c("#89CFF0", "green", "#0D47A1", "orange", "#FFCF70")
+colors <- c("#89CFF0", "#E7498C", "#0D47A1", "orange", "#6784AA")
 
 
 # Create the Plotly plot
@@ -153,7 +153,7 @@ circle<-plot_ly() %>%
   layout(
     xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE, title=""),
     yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE,title=""),
-    plot_bgcolor = 'rgba(0,0,0,0)',
+    plot_bgcolor = 'rgba(103, 72, 229, 0.22)',
     paper_bgcolor = 'rgba(0,0,0,0)'
   ) %>%
   config(displayModeBar = FALSE)
