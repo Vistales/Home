@@ -2,8 +2,14 @@ project:
   type: website
 
 website:
-  google-analytics: "G-X7Q4RX6KPB"
-  
+  cookie-consent:
+    type: express
+    style: simple
+    palette: dark
+  google-analytics:
+    tracking-id: "G-X7Q4RX6KPB"
+    anonymize-ip: true
+
   navbar:
     background: "transparent"
     foreground: "#ffff"
