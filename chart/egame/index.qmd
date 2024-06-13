@@ -1,6 +1,6 @@
 ---
-title: "" 
-
+title: "Top Earning E-Gamers of Pakistan"
+image: gamer.png
 format:    
   html:     
     code-fold: true 
@@ -15,6 +15,7 @@ execute:
 
 ![Top Earning E-Gamers](gamer.png)
 ```{r}
+
 library(packcircles)
 library(showtext)
 library(ggplot2)

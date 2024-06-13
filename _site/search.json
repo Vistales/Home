@@ -113,7 +113,7 @@
     "href": "chart/index.html",
     "title": "\nCharts\n",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nRemove commas and convert to numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nTop Earning E-Gamers of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMapping Educational Disparities in Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "db/Population/index.html",
@@ -153,8 +153,15 @@
   {
     "objectID": "chart/egame/index.html",
     "href": "chart/egame/index.html",
-    "title": "",
+    "title": "Top Earning E-Gamers of Pakistan",
     "section": "",
     "text": "Top Earning E-Gamers\n\n\nThe visual representation of earnings among Pakistani e-gamers highlights the dominance of Dota 2 players, with Sumail Hassan leading by a significant margin. Sumail, prominently depicted in the largest circle, has amassed an impressive $4,070.4K, setting him apart as the top earner in the Pakistani esports scene. His earnings reflect not only his skill and dedication to Dota 2 but also the game’s lucrative nature in the esports industry.\nYawar Hassan, another notable Dota 2 player, follows with $630.14K. The chart also includes players from other popular games, such as Tekken 7 and PUBG, with notable earners like Arslan Siddiqui and Atif Butt, earning $366.17K and $243.7K, respectively.\nThe color-coded circles represent different games, providing a clear visual distinction among the top earners in various gaming genres. This visualization not only emphasizes the significant earnings of these players but also highlights a significant gap in earnings between the top player and the rest of the pack. It will be interesting to see if other Pakistani e-gamers can bridge the earnings gap in the future."
+  },
+  {
+    "objectID": "chart/literacy/index.html",
+    "href": "chart/literacy/index.html",
+    "title": "Mapping Educational Disparities in Pakistan",
+    "section": "",
+    "text": "The state of primary education completion in Pakistan presents a stark and urgent challenge, as highlighted by above map. This visual representation paints a concerning picture of educational attainment across the country, revealing significant regional disparities.\nIslamabad stands out as a beacon of educational progress, with 79% of its population having completed primary or higher education. This impressive figure underscores the capital’s relative advantage in terms of access to quality education and resources. However, the situation is alarmingly different across other regions.\nA large portion of the country, depicted in varying shades of green, indicates much lower completion rates. The lighter shades show areas where the percentage of the population that has completed primary education or higher is critically low, dipping below 20% in several regions.\nThe educational situation in Balochistan is particularly concerning. The map highlights that many areas within the province have alarmingly low rates of primary education completion, with some regions falling below 20%. This stark disparity is indicative of the socio-economic challenges and infrastructural deficits that plague the province. Rural and remote areas in Balochistan often face a severe lack of educational resources, poorly trained teachers, and inadequate school facilities, further exacerbated by security issues and socio-political instability.\nThe lack of data in some regions, marked in grey, further exacerbates the issue. This absence of information highlights gaps in the monitoring and evaluation systems essential for informed policy-making. Without accurate data, it becomes increasingly difficult to address the educational needs and implement effective interventions.\nThe completion of primary education is a critical step towards building a skilled and knowledgeable workforce, essential for the country’s socio-economic development. Pakistan must prioritize education to bridge these gaps and secure a brighter future for its younger generations.\nIn conclusion, while Islamabad’s success is commendable, the overall low primary education completion rates across Pakistan are alarming. Immediate and sustained efforts are needed to uplift the educational standards nationwide, ensuring every child has the opportunity to complete primary education and beyond."
   }
 ]
