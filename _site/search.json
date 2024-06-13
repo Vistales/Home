@@ -113,7 +113,7 @@
     "href": "chart/index.html",
     "title": "\nCharts\n",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nRemove commas and convert to numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "db/Population/index.html",
@@ -149,5 +149,12 @@
     "title": "Pakistan’s Demographics Dashboard",
     "section": "Row",
     "text": "Row\nDistrict with higest number of households Source of drinking water lighting and cooking fuel\n\nRow\n\nRow\n\n\n\n\n\n\n\n\nRow\n\n\n\n\n\n\n\n\nRow"
+  },
+  {
+    "objectID": "chart/egame/index.html",
+    "href": "chart/egame/index.html",
+    "title": "",
+    "section": "",
+    "text": "Top Earning E-Gamers\n\n\nThe visual representation of earnings among Pakistani e-gamers highlights the dominance of Dota 2 players, with Sumail Hassan leading by a significant margin. Sumail, prominently depicted in the largest circle, has amassed an impressive $4,070.4K, setting him apart as the top earner in the Pakistani esports scene. His earnings reflect not only his skill and dedication to Dota 2 but also the game’s lucrative nature in the esports industry.\nYawar Hassan, another notable Dota 2 player, follows with $630.14K. The chart also includes players from other popular games, such as Tekken 7 and PUBG, with notable earners like Arslan Siddiqui and Atif Butt, earning $366.17K and $243.7K, respectively.\nThe color-coded circles represent different games, providing a clear visual distinction among the top earners in various gaming genres. This visualization not only emphasizes the significant earnings of these players but also highlights a significant gap in earnings between the top player and the rest of the pack. It will be interesting to see if other Pakistani e-gamers can bridge the earnings gap in the future."
   }
 ]

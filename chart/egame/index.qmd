@@ -1,0 +1,135 @@
+---
+title: "" 
+
+format:    
+  html:     
+    code-fold: true 
+mainfont: Georgia
+execute:   
+  echo: false   
+  warning: false
+
+---
+
+
+
+![Top Earning E-Gamers](gamer.png)
+```{r}
+library(packcircles)
+library(showtext)
+library(ggplot2)
+library(dplyr)
+library(stringr)
+
+
+font_add_google("Black Ops One", "gfont")
+font_add_google("Changa", "rock")
+font_add_google("Electrolize", "electro")
+elec <-"electro"
+rock<- "rock"
+gfont<- "gfont"
+
+
+showtext_auto()
+
+
+
+
+e_players<- data.frame(
+  ID = c("Ghoost", "SumaiL", "Arslan Ash", "Atif Butt", "Khan", 
+         "Hellonsteam", "ShreddedPuzzle", "UZM", "Blade", "Yawar"),
+  Name = c("Adil","Sumail Hassan", "Arslan Siddique", 
+           "Atif Butt", "Imran Khan", "M. Shaheer", 
+           "Shahyan Makhdumi", "Uzair Ahmed", "Abir Kazimi",  "Yawar Hassan"),
+  Earnings = c("39,875.00","4,070,389.31",  "366,173.95", 
+               "243,729.70", "173,327.47", "59,135.00", 
+               "50,000.00", "41,736.67", "40,146.67", "630,136.60"
+  ),
+  check.names = FALSE
+)
+
+Game<- c("PUBG","Dota 2", "Tekken 7", "Tekken 7", "Tekken 7","Fortnite", "Auto Chess", "PUBG", "PUBG", "Dota 2")
+tournament<-c(93, 51, 43, 11, 7,35,1, 14, 14,14)
+
+# Remove commas and convert to numeric
+e_players$Earnings <- as.numeric(gsub(",", "", e_players$Earnings))
+e_players$Earnings <-e_players$Earnings/1e3
+e_players$Games<-Game
+e_players$Tourn <-tournament
+View(e_players)
+
+packing <- circleProgressiveLayout(e_players$Earnings, sizetype = "area")
+player_data <- cbind(e_players, packing)
+dat.gg <- circleLayoutVertices(packing, npoints=70)
+
+group_colors <- c(
+  "Dota 2" = "#8E2D96",       
+  "Tekken 7" = "#EB7F2B",     
+  "Auto Chess" = "#F3C40E",     
+  "Fortnite" = "#2E5F9B",   
+  "PUBG" = "#4DA346"         
+)
+
+# Create the ggplot
+sam<-ggplot() +
+  geom_polygon(data = dat.gg, aes(x, y, group = id, fill=  e_players$Games[id]), colour = "black") +
+  scale_fill_manual(values = group_colors) +
+  theme(legend.position="none") + xlim(c(-50, 75))+
+  coord_equal(clip ='off') +
+  annotate("text", 35, y = 2.9, label = paste(e_players$Name[2], "\n", "$",round(e_players$Earnings[2], 1), "K"), size = 8, color = "white", family = gfont ,fontface = "bold", hjust = 0.5)+
+  annotate("text", -3, y = 6.2, label = paste(e_players$Name[1]), size = 3, color = "white", family = rock ,fontface = "bold",  hjust = 0.5)+
+  annotate("text", -10, y = -12.5, label = paste("Arsalan", "\n","Siddiqui", "\n","$", round(e_players$Earnings[3], 2), "K"), size = 3.8, color = "white", family = rock ,fontface = "bold",  hjust = 0.5)+
+  annotate("text", -15, y = 5.3, label = paste(e_players$Name[4], "\n", "$", round(e_players$Earnings[4], 1), "K"), size = 3.8, color = "white",family = rock, fontface = "bold", hjust = 0.5)+
+  annotate("text", -3.7, y = 16.7, label = paste(e_players$Name[5], "\n","$", round(e_players$Earnings[5], 1), "K"), size = 3, color = "white", family = rock ,fontface = "bold", hjust = 0.5)+
+  annotate("text", -28, y = 1, label = paste("$",round(e_players$Earnings[7], 1), "K"), size = 3.3, color = "white",family = rock , fontface = "bold", hjust = 0.5)+
+  annotate("text", -22, y = -5.8, label = paste("$",round(e_players$Earnings[6], 1), "K"), size = 3.4, color = "white", family = rock ,fontface = "bold", hjust = 0.5)+
+  annotate("text", -27, y = 8.5, label = paste("$", round(e_players$Earnings[8], 1), "K"), size = 2.6, color = "white", family = rock ,fontface = "bold", hjust = 0.5)+
+  annotate("text", -23, y = 15, label = paste("$",round(e_players$Earnings[9], 1), "K"), size = 2.6, color = "white",family = rock , fontface = "bold", hjust = 0.5)+
+  annotate("text", -3.3, y = 0.9, label = paste("$",round(e_players$Earnings[1], 1), "K"), size = 2.6, color ="white",family = rock , fontface = "bold", hjust = 0.5)+
+  annotate("text", -20, y = 30, label = paste(e_players$Name[10], "\n","$", round(e_players$Earnings[10], 2), "K"), size = 4.5, color = "white",family = rock , fontface = "bold", hjust = 0.5)+
+  annotate("text", -34, y = 18, label = paste("Abir" ,"\n","Kazimi"), size = 3.2, color = "white", family = rock ,fontface = "bold", hjust = 0.5)+
+  annotate("text", -38, y = 8.5, label = paste("Uzair","\n","Ahmed"), size = 3.2, color = "white",family = rock , fontface = "bold", hjust = 0.5)+
+  annotate("text", -34, y = -15, label = paste("Muhammad","\n","Shaheer"),angle = 29, size = 3.4, color = "white", family = rock ,fontface = "bold", hjust = 0.5)+
+  annotate("text", -42, y = -5, label = paste("Shayan","\n","Makhdumi"),angle = 26, size = 3.6, color = "white", family = rock ,fontface = "bold", hjust = 0.5)
+
+
+pam<-sam+
+  labs(title = "Pakistan's E-Gamers: \nWho’s Earning the Most?",
+       subtitle = "Dota 2 Player Sumail Reigns Supreme Across Esports Earnings",
+       caption = "Vistales | Data: Esports Earnings")+
+  theme_void() + 
+  theme(legend.position="bottom",
+        legend.text = element_text(color = "white"),
+        legend.title = element_blank(),
+        plot.title = element_text(family = gfont, 
+                                  face = 'bold',
+                                  size = 25,
+                                  color = "white",
+                                  margin = margin(15, 0, 0, 18),),
+        plot.subtitle = element_text(
+                                     face = 'bold',
+                                     size = 12,
+                                     color = "white",
+                                     margin = margin(15, 0, 0, 18),),
+        plot.caption = element_text(family = "fraunces", 
+                                    size = 10,
+                                    color = "white",
+                                    margin = margin(35, 20, 0, 0),),
+        plot.background = element_rect(fill = "#181818", colour = "black")
+  )
+showtext_opts(dpi = 320)         
+
+
+ggsave("gamer.png", pam,  dpi=320, width = 6, height = 6)
+
+```
+
+
+The visual representation of earnings among Pakistani e-gamers highlights the dominance of Dota 2 players, with Sumail Hassan leading by a significant margin. Sumail, prominently depicted in the largest circle, has amassed an impressive $4,070.4K, setting him apart as the top earner in the Pakistani esports scene. His earnings reflect not only his skill and dedication to Dota 2 but also the game's lucrative nature in the esports industry.
+
+Yawar Hassan, another notable Dota 2 player, follows with $630.14K. The chart also includes players from other popular games, such as Tekken 7 and PUBG, with notable earners like Arslan Siddiqui and Atif Butt, earning $366.17K and $243.7K, respectively.
+
+The color-coded circles represent different games, providing a clear visual distinction among the top earners in various gaming genres. This visualization not only emphasizes the significant earnings of these players but also highlights a significant gap in earnings between the top player and the rest of the pack. It will be interesting to see if other Pakistani e-gamers can bridge the earnings gap in the future.
+
+
+

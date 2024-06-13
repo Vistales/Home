@@ -49,5 +49,8 @@
   },
   "db/Population/test.qmd": {
     "test.html": "2d35f45c"
+  },
+  "chart/egame/index.qmd": {
+    "index.html": "271b700a"
   }
 }
