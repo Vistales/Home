@@ -41,7 +41,7 @@ format:
     #theme: mint
     css: styles.css
     toc: false
-    #include-in-header: gtm_code_head.html
+    include-in-header: gtm_code_head.html
     #include-before-body: gtm_code_body.html
 
 

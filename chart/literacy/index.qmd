@@ -13,6 +13,8 @@ execute:
 
 
 ![Choropleth map showing primary education completion rate across the districts of Pakistan](fal.png)
+
+
 The state of primary education completion in Pakistan presents a stark and urgent challenge, as highlighted by above map. This visual representation paints a concerning picture of educational attainment across the country, revealing significant regional disparities.
 
 Islamabad stands out as a beacon of educational progress, with 79% of its population having completed primary or higher education. This impressive figure underscores the capital's relative advantage in terms of access to quality education and resources. However, the situation is alarmingly different across other regions.
