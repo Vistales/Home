@@ -92,7 +92,7 @@ Remittances go beyond mere dollars and cents; they embody resilience, bridging t
 ::::
 
 
-:::: {.row .row-body-outset style="background-color: #F3EFAE;margin:10% 25% 5% 25%;padding:5%; font-family:fraunces; font-size: 4vh; color:#FFF895;"}
+:::: {.row .row-body-outset style="background-color: #F3EFAE;margin:10% 25% 5% 25%;padding:5%; font-family:fraunces; font-size: 4vh; color:#52AA7E;"}
 
 Sending money back home is more than a simple financial transaction. Each remittance carries with it the stories of sacrifice, resilience, and determination of those who seek better opportunities afar, while nurturing the dreams and aspirations of loved ones left behind
 
