@@ -1,0 +1,106 @@
+
+body{
+  animation: none !important;
+  background-color: transparent;
+}
+
+
+.navbar{
+  background-color: #68D2A2;
+  
+  /* Adjust the value as needed */
+}
+
+.background-container {
+  position: relative;
+  top: 0%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.background-image {
+  background-image: url(https://images.unsplash.com/photo-1502920514313-52581002a659?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-text {
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 8.5vh; /* Increased font size for better visibility */
+  font-weight: bold;
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  left:50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+.subtitle-text {
+  color: black;
+  font-size: 4vh; /* Increased font size for better visibility */
+  z-index: 2;
+  position: absolute;
+  top: 70%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+  
+}
+
+
+.fixed-image {
+  /*height: 80vh; */
+  position: sticky;
+  font-family: Georgia;
+  top: 0px;
+  padding: 0px; /* Adjust padding as needed */
+}
+
+.box {
+  
+  position: relative;
+  
+}
+
+.hscroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  word-wrap: break-word; 
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  background: rgba(249, 190, 24, 0.4);
+  padding: 10px;
+  text-align: center;
+  color: white;  /* Ensures text is readable against the background */
+}
