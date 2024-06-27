@@ -1,4 +1,5 @@
 ---
+image: cover2.jpeg
 format:
   html:
     css: remit.css
@@ -27,8 +28,9 @@ library(stringr)
 library(plotly)
 
 
-data <- read.csv("C:/Users/Pc/Documents/Data/dataset.csv") # Place your data transformation code here 
+data <- read.csv("C:/Users/Pc/Documents/Data/dataset.csv")
 
+# Remittances: Pakistan's Economic Lifeline 
 
 # Create a function to determine fiscal year based on given formula
 get_fiscal_year <- function(date) {
