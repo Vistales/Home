@@ -1,0 +1,22 @@
+---
+title: "Trade Imbalance"
+image: io.png
+format:    
+  html:     
+    code-fold: true 
+mainfont: Georgia
+execute:   
+  echo: false   
+  warning: false
+
+---
+
+
+
+![Exports and Imports of Pakistan by Commodities](io.png)
+
+This chart provides an insightful analysis of Pakistan's import and export landscape for the year 2023, using a circular voronoi layout  to represent the value of each commodity category in billion PKR.
+
+The main highlight of the chart is the trade imbalance where imports, particularly in essential commodities like fuel and machinery, significantly outweigh exports. This situation underscores the importance for Pakistan to explore strategies to boost its export capacity while managing its import dependency.
+
+The dominance of minerals and fuel lubricants in imports category suggests a heavy reliance on these resources to meet domestic energy and industrial needs.
