@@ -58,5 +58,8 @@
   },
   "chart/trade/index.qmd": {
     "index.html": "56e0c7ec"
+  },
+  "db/Remit/index.qmd": {
+    "index.html": "f374ba3b"
   }
 }

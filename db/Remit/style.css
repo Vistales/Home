@@ -1,0 +1,15 @@
+.navbar{
+  background-color: darkblue;
+  font-family: Georgia, Sans-Serif;
+}
+
+
+
+
+.footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  font-family: Georgia, serif;
+}

@@ -25,7 +25,8 @@
   {
     "listing": "/db/index.html",
     "items": [
-      "/db/Population/index.html"
+      "/db/Population/index.html",
+      "/db/Remit/index.html"
     ]
   }
 ]
