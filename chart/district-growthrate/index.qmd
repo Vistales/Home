@@ -1,0 +1,25 @@
+---
+title: "Mapping Population Growth Rate of Pakistan"
+image: growthrate.png
+
+format:    
+  html:     
+    code-fold: true 
+execute:   
+  echo: false   
+  warning: false
+---
+
+
+
+![Choropleth map showing population growth rate across the districts of Pakistan](growthrate.png)
+
+
+As of the 2023 census data from Pakistan Bureau of Statistics, Pakistan is the world's 6th populous country with population of 241.5 million which is growing at the rate 2.5% anualy. 
+
+
+While the national growth rate provides a general overview, significant variations exist across different provinces and districts. Balochistan province, in particular, exhibits notable population growth. Specifically, District Washuk shows a growth rate of 9.51%, Panjgur district has a rate of 8.36%, districts of Kharan and Awaran have the growth rates above 5%. 
+
+The varying growth rates across districts highlight the need for region-specific policies. High-growth areas require investment in infrastructure, healthcare, and education to accommodate the increasing population. 
+
+Understanding the population growth dynamics of Pakistan at the district level is essential for effective policy formulation and resource allocation. By recognizing the unique challenges and opportunities presented by varying growth rates, policymakers can develop targeted strategies to promote balanced and sustainable development across the country.

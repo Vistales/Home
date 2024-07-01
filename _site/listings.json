@@ -15,6 +15,7 @@
   {
     "listing": "/chart/index.html",
     "items": [
+      "/chart/district-growthrate/index.html",
       "/chart/egame/index.html",
       "/chart/literacy/index.html",
       "/chart/pyramid/index.html",

@@ -61,5 +61,8 @@
   },
   "db/Remit/index.qmd": {
     "index.html": "f374ba3b"
+  },
+  "chart/district-growthrate/index.qmd": {
+    "index.html": "baf9532b"
   }
 }
