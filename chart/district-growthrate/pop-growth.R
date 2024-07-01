@@ -56,8 +56,8 @@ merged_data <- merge(shp2, df, by.x = "ADM2_EN", all.x = TRUE)
 
 sal<-ggplot(merged_data, aes(fill = `Growth Rate`)) +
   geom_sf() +
-  geom_sf_text(data = merged_data ,aes(label = ADM2_EN),
-            size = 3, color = "black", nudge_y = 0.05)+
+  #geom_sf_text(data = merged_data ,aes(label = ADM2_EN),
+   #         size = 3, color = "black", nudge_y = 0.05)+
   geom_point(aes(x = 70, y = 30, color = "No Data"), size = 0.2) +
   scale_fill_gradient(low = "#F0ECCC", high = "#f25c54", guide = "colorbar", na.value = "#ACACAC") +
   scale_color_manual(values = c("No Data" = "#ACACAC")) +
@@ -73,7 +73,7 @@ sal<-ggplot(merged_data, aes(fill = `Growth Rate`)) +
         plot.background = element_rect(fill = "#F4F1DE", colour = "#E2EFD8"),
         panel.background = element_rect(fill = "#F4F1DE", colour = "#E2EFD8"),
         legend.background = element_rect(fill = "#F4F1DE", colour = "#E2EFD8")) +
-  labs(title = "District Level Population Growth Rate in Pakistan",
+  labs(title = "District Level Population Growth Rate of Pakistan",
        fill = "values in percent",
        caption = "Vistales | Data: Pakistan Bureau of Statistics",
        color = NULL)+
