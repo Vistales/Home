@@ -64,5 +64,8 @@
   },
   "chart/district-growthrate/index.qmd": {
     "index.html": "baf9532b"
+  },
+  "chart/social-users/index.qmd": {
+    "index.html": "a037f7f0"
   }
 }

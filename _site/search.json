@@ -113,7 +113,7 @@
     "href": "chart/index.html",
     "title": "\nCharts\n",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMapping Population Growth Rate of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop Earning E-Gamers of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMapping Educational Disparities in Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrade Imbalance\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMapping Population Growth Rate of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop Earning E-Gamers of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMapping Educational Disparities in Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUser Growth Insights of Pakistan’s Social Media Landscape\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrade Imbalance\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "db/Population/index.html",
@@ -177,5 +177,12 @@
     "title": "Mapping Population Growth Rate of Pakistan",
     "section": "",
     "text": "Choropleth map showing population growth rate across the districts of Pakistan\n\n\nAs of the 2023 census data from Pakistan Bureau of Statistics, Pakistan is the world’s 6th populous country with population of 241.5 million which is growing at the rate 2.5% anualy.\nWhile the national growth rate provides a general overview, significant variations exist across different provinces and districts. Balochistan province, in particular, exhibits notable population growth. Specifically, District Washuk shows a growth rate of 9.51%, Panjgur district has a rate of 8.36%, districts of Kharan and Awaran have the growth rates above 5%.\nThe varying growth rates across districts highlight the need for region-specific policies. High-growth areas require investment in infrastructure, healthcare, and education to accommodate the increasing population.\nUnderstanding the population growth dynamics of Pakistan at the district level is essential for effective policy formulation and resource allocation. By recognizing the unique challenges and opportunities presented by varying growth rates, policymakers can develop targeted strategies to promote balanced and sustainable development across the country."
+  },
+  {
+    "objectID": "chart/social-users/index.html",
+    "href": "chart/social-users/index.html",
+    "title": "User Growth Insights of Pakistan’s Social Media Landscape",
+    "section": "",
+    "text": "User Growth of Social Media Apps in Pakistan\n\n\nThe social media landscape in Pakistan has undergone a significant transformation between 2022 and 2024, as illustrated by this visualization. While YouTube maintains its dominant position with 71.7M users, the real story lies in TikTok’s extraordinary growth.\nIn just two years, TikTok has surged from a relatively modest user base to become the second most popular platform in Pakistan, boasting 54.4M users. This represents a remarkable increase, outpacing all other social media apps in terms of growth rate.\n\nFacebook: Continues to hold a significant share with a slight increase from 43.6 million to 44.5 million users.\nSnapchat: Experienced a notable rise, growing from 18.8 million to 30.2 million users.\nInstagram: Saw moderate growth, moving from 17.3 million to 24 million users.\nLinkedIn: Also grew steadily, reaching 12 million users by 2024.\nX: The rebranded platform (formerly known as Twitter) has a user base of 4.5 million.\n\nThis visualization clearly demonstrates TikTok’s explosive popularity in Pakistan, reshaping the country’s social media preferences. It raises intriguing questions about the factors driving this shift and the potential implications for digital marketing and social trends in the region."
   }
 ]

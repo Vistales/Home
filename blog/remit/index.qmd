@@ -52,6 +52,12 @@ df <- data %>%
   arrange(country)%>%
   mutate(remit = round(remit/1000 , 2))
 
+#install.packages("writexl")
+
+#library("writexl")
+ 
+#write_xlsx(df, "remit.xlsx")
+
 
 ```
 

@@ -1,0 +1,29 @@
+---
+title: "User Growth Insights of Pakistan's Social Media Landscape"
+image: social-users.png
+format:    
+  html:     
+    code-fold: true 
+mainfont: Georgia
+execute:   
+  echo: false   
+  warning: false
+
+---
+
+
+
+![User Growth of Social Media Apps in Pakistan ](social-users.png)
+
+
+The social media landscape in Pakistan has undergone a significant transformation between 2022 and 2024, as illustrated by this visualization. While YouTube maintains its dominant position with 71.7M users, the real story lies in TikTok's extraordinary growth.
+
+In just two years, TikTok has surged from a relatively modest user base to become the second most popular platform in Pakistan, boasting 54.4M users. This represents a remarkable increase, outpacing all other social media apps in terms of growth rate.
+
+- Facebook: Continues to hold a significant share with a slight increase from 43.6 million to 44.5 million users.
+- Snapchat: Experienced a notable rise, growing from 18.8 million to 30.2 million users.
+- Instagram: Saw moderate growth, moving from 17.3 million to 24 million users.
+- LinkedIn: Also grew steadily, reaching 12 million users by 2024.
+- X: The rebranded platform (formerly known as Twitter) has a user base of 4.5 million.
+
+This visualization clearly demonstrates TikTok's explosive popularity in Pakistan, reshaping the country's social media preferences. It raises intriguing questions about the factors driving this shift and the potential implications for digital marketing and social trends in the region.
