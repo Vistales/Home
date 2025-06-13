@@ -7,7 +7,7 @@ listing:
   sort-ui: true
   filter-ui: true
   feed: true
-  fields: [image, title, description, categories]
+  fields: [image, title, categories]
   type: grid
 page-layout: full
 

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Visual\n\n\nTales\n\n\nVistales\n\n\nPakistan’s Data Insights: Unveiling the Stories Behind Numbers"
+    "text": "Visual\n\n\nTales\n\n\nVistales\n\n\nPakistan’s Data Insights: Unveiling the Stories Behind Numbers\n\n\n&lt;&gt;"
   },
   {
     "objectID": "about.html",
@@ -113,14 +113,14 @@
     "href": "chart/index.html",
     "title": "\nCharts\n",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMapping Population Growth Rate of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop Earning E-Gamers of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMapping Educational Disparities in Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUser Growth Insights of Pakistan’s Social Media Landscape\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrade Imbalance\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMapping Population Growth Rate of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop Earning E-Gamers of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnder One Roof: Exploring Household Sizes Across Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\nMapping Educational Disparities in Pakistan\n\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\n\n\n\nUser Growth Insights of Pakistan’s Social Media Landscape\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrade Imbalance\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "db/Population/index.html",
     "href": "db/Population/index.html",
-    "title": "Pakistan’s Demographics Dashboard",
+    "title": "Pakistan’s Population Dashboard",
     "section": "",
-    "text": "Global Rank\n6 th\n\n\nTotal population\n241.49 M\n\n\nGrowth Rate\n2.55 %"
+    "text": "#|include: false\nlibrary(tidyverse)\nlibrary(showtext)\nlibrary(packcircles)\nlibrary(plotly)\nlibrary(webr)\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(scales)\n\n\nfont_add_google(\"Fraunces\", \"title_font\")\nfont_add_google(\"Montserrat\", \"body_font\")\nshowtext_auto()\n\nbody_font&lt;- \"body_font\"\ntitle_font&lt;- \"title_font\""
   },
   {
     "objectID": "db/index.html",
@@ -132,9 +132,9 @@
   {
     "objectID": "db/Population/index.html#column",
     "href": "db/Population/index.html#column",
-    "title": "Pakistan’s Demographics Dashboard",
-    "section": "",
-    "text": "Global Rank\n6 th\n\n\nTotal population\n241.49 M\n\n\nGrowth Rate\n2.55 %"
+    "title": "Pakistan’s Population Dashboard",
+    "section": "Column",
+    "text": "Column\n\nRow\n\nGlobal Rank\n6 th\n\n\nTotal population\n241.49 M\n\n\nGrowth Rate\n2.55 %\n\n\n\nRow\n\nlibrary(tidyverse)\nlibrary(plotly)\nlibrary(dplyr)\n\ndf&lt;-data.frame(variable = c(\"Urban\", \"Rural\"),\n           value = c(93750724,147748707))\n\ndiv&lt;-plot_ly(df, labels = ~variable, values = ~value, type = 'pie', hole = 0.5,marker = list(colors = c('#E7498C', '#6784AA')),textinfo ='label',textposition = 'inside',direction = 'clockwise', showlegend= FALSE) %&gt;%\nlayout(margin = list(l = 20, r = 20)) %&gt;%\nconfig(displayModeBar = FALSE)\n\ndiv\n\n\n\n\n\n\ninner_data &lt;- data.frame(\n  state = rep(c(\"Punjab\", \"Sindh\", \"Balochistan\", \"KPK\", \"ICT\"), each = 2),\n  variable = rep(c(\"Rural\", \"Urban\"), times = 5),\n  value = c(75715270, 51973652, 25771071, 29925076, 10282574, 4611828, 34724801, 6131296, 1254991, 1108872)\n)\n\n# Calculate percentages\ninner_data &lt;- inner_data %&gt;%\n  group_by(state) %&gt;%\n  mutate(total = sum(value),\n         percentage = round((value / total) * 100, 2),\n         hover_text = paste(variable, \"&lt;br&gt;Population:\", value, \"&lt;br&gt;Percentage:\", percentage, \"%\"))\n\n# Define colors\ncolors &lt;- c(\"Rural\" = \"#E7498C\", \"Urban\" = \"#6784AA\")\n\n# Create the plot\nplace &lt;- plot_ly(inner_data, y = ~state, x = ~percentage,\n                 type = 'bar', color = ~variable, colors = colors, orientation = 'h',\n                 text = ~hover_text, hoverinfo = 'text') %&gt;%\n  layout(\n    barmode = \"stack\", showline = FALSE,showlegend =FALSE,\n    xaxis = list(showticklabels = FALSE, title = \"\"),\n    yaxis = list(title = \"\")\n    #legend = list(orientation = \"h\", y = 1.1, x = 0.5, xanchor = \"center\", yanchor = \"bottom\")\n\n  ) %&gt;%\n  config(displayModeBar = FALSE) %&gt;%\n  style(\n    hoverlabel = list(bgcolor = \"beige\")\n  )\n\n# Display the plot\nplace\n\n\n\n\n\n\n# Sample data\npop_df &lt;- data.frame(\n  state = c(\"Punjab\", \"Sindh\", \"Balochistan\", \"KPK\", \"ICT\"),\n  value = c(127688922, 55696147, 1489402, 40856097, 2363863)\n)\n\n# Generate circle packing layout\npop_df$packing &lt;- circleProgressiveLayout(pop_df$value, sizetype = 'area')\ndf.gg &lt;- circleLayoutVertices(pop_df$packing, npoints=500)\n\n# Convert data for Plotly\ncircle_data &lt;- df.gg %&gt;%\n  mutate(state = factor(id, labels = pop_df$state))\n\n# Define colors\ncolors &lt;- c(\"#89CFF0\", \"#E7498C\", \"#0D47A1\", \"orange\", \"#6784AA\")\n\n\n# Create the Plotly plot\ncircle&lt;-plot_ly() %&gt;%\n  add_polygons(data = circle_data, x = ~x, y = ~y, color = ~state, colors = colors, \n               showlegend = FALSE, alpha = 0.8, line = list(width = 1)) %&gt;%\n  add_text(data = pop_df, x = ~packing$x, y = ~packing$y, text = ~paste(state, value, sep=\"\\n\"),\n           textposition = 'middle center', textfont = list(size = 16, color = 'black')) %&gt;%\n  layout(\n    xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE, title=\"\"),\n    yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE,title=\"\"),\n    plot_bgcolor = 'rgba(103, 72, 229, 0.22)',\n    paper_bgcolor = 'rgba(0,0,0,0)'\n  ) %&gt;%\n  config(displayModeBar = FALSE)\n\ncircle"
   },
   {
     "objectID": "db/Population/index.html#column-height-100",
@@ -155,7 +155,7 @@
     "href": "chart/egame/index.html",
     "title": "Top Earning E-Gamers of Pakistan",
     "section": "",
-    "text": "Top Earning E-Gamers\n\n\nThe visual representation of earnings among Pakistani e-gamers highlights the dominance of Dota 2 players, with Sumail Hassan leading by a significant margin. Sumail, prominently depicted in the largest circle, has amassed an impressive $4,070.4K, setting him apart as the top earner in the Pakistani esports scene. His earnings reflect not only his skill and dedication to Dota 2 but also the game’s lucrative nature in the esports industry.\nYawar Hassan, another notable Dota 2 player, follows with $630.14K. The chart also includes players from other popular games, such as Tekken 7 and PUBG, with notable earners like Arslan Siddiqui and Atif Butt, earning $366.17K and $243.7K, respectively.\nThe color-coded circles represent different games, providing a clear visual distinction among the top earners in various gaming genres. This visualization not only emphasizes the significant earnings of these players but also highlights a significant gap in earnings between the top player and the rest of the pack. It will be interesting to see if other Pakistani e-gamers can bridge the earnings gap in the future."
+    "text": "![Top Earning E-Gamers]\nThe visual representation of earnings among Pakistani e-gamers highlights the dominance of Dota 2 players, with Sumail Hassan leading by a significant margin. Sumail, prominently depicted in the largest circle, has amassed an impressive $4,070.4K, setting him apart as the top earner in the Pakistani esports scene. His earnings reflect not only his skill and dedication to Dota 2 but also the game’s lucrative nature in the esports industry.\nYawar Hassan, another notable Dota 2 player, follows with $630.14K. The chart also includes players from other popular games, such as Tekken 7 and PUBG, with notable earners like Arslan Siddiqui and Atif Butt, earning $366.17K and $243.7K, respectively.\nThe color-coded circles represent different games, providing a clear visual distinction among the top earners in various gaming genres. This visualization not only emphasizes the significant earnings of these players but also highlights a significant gap in earnings between the top player and the rest of the pack. It will be interesting to see if other Pakistani e-gamers can bridge the earnings gap in the future."
   },
   {
     "objectID": "chart/literacy/index.html",
@@ -184,5 +184,26 @@
     "title": "User Growth Insights of Pakistan’s Social Media Landscape",
     "section": "",
     "text": "User Growth of Social Media Apps in Pakistan\n\n\nThe social media landscape in Pakistan has undergone a significant transformation between 2022 and 2024, as illustrated by this visualization. While YouTube maintains its dominant position with 71.7M users, the real story lies in TikTok’s extraordinary growth.\nIn just two years, TikTok has surged from a relatively modest user base to become the second most popular platform in Pakistan, boasting 54.4M users. This represents a remarkable increase, outpacing all other social media apps in terms of growth rate.\n\nFacebook: Continues to hold a significant share with a slight increase from 43.6 million to 44.5 million users.\nSnapchat: Experienced a notable rise, growing from 18.8 million to 30.2 million users.\nInstagram: Saw moderate growth, moving from 17.3 million to 24 million users.\nLinkedIn: Also grew steadily, reaching 12 million users by 2024.\nX: The rebranded platform (formerly known as Twitter) has a user base of 4.5 million.\n\nThis visualization clearly demonstrates TikTok’s explosive popularity in Pakistan, reshaping the country’s social media preferences. It raises intriguing questions about the factors driving this shift and the potential implications for digital marketing and social trends in the region."
+  },
+  {
+    "objectID": "db/Population/index.html#column-1",
+    "href": "db/Population/index.html#column-1",
+    "title": "Pakistan’s Population Dashboard",
+    "section": "Column",
+    "text": "Column\n\nlibrary(dplyr)\nlibrary(showtext)\nlibrary(patchwork)\nlibrary(plotly)\n\n\n\npop&lt;-read.csv(\"population table.csv\")\n\ndf&lt;- pop %&gt;%\n  select(Age.Groups..Years., Population, X, X.1) %&gt;%\n  filter(!row_number() %in% c(1,3)) %&gt;%\n  rename(age = Age.Groups..Years., male = X, fem = X.1, total = Population ) %&gt;%\n  filter(!row_number() %in% c(1,2)) \n\n\ndf$age[df$age == '0'] &lt;- '00 - 00'\ndf$age[df$age == '1'] &lt;- '01- 1+'\ndf$age[df$age == '65+'] &lt;- '65 - 65+'\n\n\n## female ###\n\nfem&lt;-ggplot(data = df, aes(x = age, y = as.numeric(fem))) +ylab(\"female (%)\")+\n  geom_hline(yintercept = c(2,4,6,8),   color = \"gray\", size = 0.5)+\n  geom_bar(stat = \"identity\", fill = \"#EA498C\") +\n  geom_text(aes(label = fem ),hjust = 0 ,size = 9)+\n  #geom_area()+\n  \n  #theme_void()+\n  theme(axis.title.x = element_text(family= body_font, size=  18), \n        axis.text.x = element_text(size = 20),\n        axis.ticks = element_blank(),\n        axis.title.y = element_blank(), \n        axis.text.y = element_text(face =\"bold\",size= 15), \n        panel.grid = element_blank(),\n        panel.background = element_rect(fill = \"#E8F6FF\"),\n        plot.background = element_rect(fill = \"#E8F6FF\"),\n        legend.position = 'none',\n        plot.margin = unit(c(1,0,1,1), \"mm\"))+coord_flip(ylim =c(0.4, 8.2))\n  \n  \n### male ###\n\nmale&lt;-ggplot(data = df , aes(x =age, y = as.numeric(male))) +\n  geom_hline(yintercept = c(2,4,6,8),  color = \"gray\", size = 0.8)+\n  geom_bar(stat = \"identity\", fill = \"#6784AA\") +\n  ylab(\"male (%)\")+\n  geom_text(aes(label = male),hjust = 1 ,size = 9)+\n  \n  theme(axis.title.x = element_text(family= body_font, size=  18), \n        axis.title.y = element_blank(), \n        axis.text.y = element_blank(), \n         axis.text.x = element_text(size = 18), \n        panel.grid = element_blank(),\n        axis.ticks= element_blank(), \n        legend.position = 'none',\n        panel.background = element_rect(fill = \"#E8F6FF\"),\n        plot.background = element_rect(fill = \"#E8F6FF\"),\n        panel.margin = unit(c(1,0,1,0), \"mm\"),\n        plot.margin = margin(0,0,0,0),\n        )+ scale_y_reverse(labels =  )+ coord_flip(ylim =c(8,0.5))\n\n\ng&lt;-male + fem +  plot_layout(ncol =2, widths = c(0.5, 0.5))\n\ng_plus&lt;- g + \n  labs(\n       subtitle = \"Age in Years\")+\n  theme(plot.subtitle = element_text(family = body_font,size = 18, margin = margin(0, 0,0,-40)),\n        plot.background = element_rect(fill = \"#E8F6FF\", colour = \"#E8F6FF\"),\n        )\ng_plus"
+  },
+  {
+    "objectID": "chart/household-size/index.html",
+    "href": "chart/household-size/index.html",
+    "title": "Under One Roof: Exploring Household Sizes Across Pakistan",
+    "section": "",
+    "text": "This tehsil-wise visualization paints a fascinating picture of family structures across Pakistan. Each dot represents a different tehsil, clustered by province, revealing striking variations in household sizes. At a glance, we see Balochistan’s Sangan reporting the largest households, while Punjab’s more urbanized tehsils show smaller family units.\nThe data tells a story of cultural and economic influences—regions with stronger joint family traditions, like parts of KPK and Balochistan, naturally show higher averages. Meanwhile, the relatively compact households in Punjab’s Noor Pur tensil hint at evolving urban lifestyles.\nWhat makes this particularly interesting are the outliers—like Sangan in Balochistan with its unusually high count, possibly reflecting unique tribal patterns. Such differences remind us that behind every statistic are real families, each with their own story of how they live under one roof."
+  },
+  {
+    "objectID": "blog/genderpaygap/index.html",
+    "href": "blog/genderpaygap/index.html",
+    "title": "",
+    "section": "",
+    "text": "The gender pay gap reflects the difference in average earnings between men and women in the workforce. It doesn’t always mean that women are paid less for doing the exact same job — rather, it highlights patterns across industries, roles, and seniority levels that lead to unequal pay outcomes over time.\nThis gap can be shaped by multiple factors:\nFewer women in senior or high-paying roles\nCareer interruptions (e.g., caregiving responsibilities)\nOccupational segregation — women concentrated in lower-paid sectors\nPay negotiation gaps and biased promotion paths\nEven when controlling for experience and education, a measurable gap often remains. It’s a signal — not of individual choices — but of structural imbalance in how work is valued and rewarded."
   }
 ]

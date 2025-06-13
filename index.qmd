@@ -6,6 +6,8 @@ format:
     css: styles.css
 embed-resources: true
 ---
+<body class="quarto-page index">
+
 <div class="container">
   <div class="text text-left" id="text-left">Visual</div>
   <div class="text text-right" id="text-right">Tales</div>
@@ -13,6 +15,7 @@ embed-resources: true
   <div class="mini" id="after">Pakistan’s Data Insights: Unveiling the Stories Behind Numbers</div>
 </div>
 
+<>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -30,5 +33,3 @@ embed-resources: true
     });
   });
 </script>
-
-

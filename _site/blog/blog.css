@@ -1,4 +1,14 @@
 
+
+body.index {
+  margin: 0;
+  height: 100vh;
+  font-family: Georgia, Sans-Serif;
+  justify-content: center;
+  align-items: center;
+  animation: gradientBackground 30s linear infinite;
+}
+
 /* Style center-aligned text */
 .center-text {
   text-align: center;

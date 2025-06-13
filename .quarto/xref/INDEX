@@ -67,5 +67,11 @@
   },
   "chart/social-users/index.qmd": {
     "index.html": "a037f7f0"
+  },
+  "chart/household-size/index.qmd": {
+    "index.html": "b62b60f8"
+  },
+  "blog/genderpaygap/index.qmd": {
+    "index.html": "0fec5fb4"
   }
 }

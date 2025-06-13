@@ -26,7 +26,7 @@ body_font<- "body_font"
 title_font<- "title_font"
 
 
-pop<-read.csv("C:/Users/Pc/Documents/Quarto/pp/population table.csv")
+pop<-read.csv("population table.csv")
 
 df<- pop %>%
   select(Age.Groups..Years., Population, X, X.1) %>%

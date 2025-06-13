@@ -1,0 +1,22 @@
+---
+title: "Under One Roof: Exploring Household Sizes Across Pakistan"
+image: 14.png
+format:    
+  html:     
+    code-fold: true 
+embed-resources: true
+mainfont: Georgia
+execute:   
+  echo: false   
+  warning: false
+
+---
+
+![](./14.png)
+
+This tehsil-wise visualization paints a fascinating picture of family structures across Pakistan. Each dot represents a different tehsil, clustered by province, revealing striking variations in household sizes. At a glance, we see Balochistan's Sangan reporting the largest households, while Punjab's more urbanized tehsils show smaller family units.
+
+The data tells a story of cultural and economic influences—regions with stronger joint family traditions, like parts of KPK and Balochistan, naturally show higher averages. Meanwhile, the relatively compact households in Punjab's Noor Pur tensil hint at evolving urban lifestyles.
+
+What makes this particularly interesting are the outliers—like Sangan in Balochistan with its unusually high count, possibly reflecting unique tribal patterns. Such differences remind us that behind every statistic are real families, each with their own story of how they live under one roof.
+

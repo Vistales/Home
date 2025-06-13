@@ -28,7 +28,7 @@
 }
 
 /* Apply the gradient animation to the body */
-body {
+body.index {
   margin: 0;
   height: 100vh;
   font-family: Georgia, Sans-Serif;

@@ -1,0 +1,33 @@
+---
+#image: 
+format:
+  html:
+#    css: remit.css
+    code-fold: true
+    toc: false
+    number-sections: false
+    self-contained: true
+    grid:
+      sidebar-width: 50px
+      body-width: 2000px
+      margin-width: 0px
+      gutter-width: 0rem
+page-layout: full
+
+embed-resources: true
+---
+
+The gender pay gap reflects the difference in average earnings between men and women in the workforce. It doesn’t always mean that women are paid less for doing the exact same job — rather, it highlights patterns across industries, roles, and seniority levels that lead to unequal pay outcomes over time.
+
+This gap can be shaped by multiple factors:
+
+Fewer women in senior or high-paying roles
+
+Career interruptions (e.g., caregiving responsibilities)
+
+Occupational segregation — women concentrated in lower-paid sectors
+
+Pay negotiation gaps and biased promotion paths
+
+Even when controlling for experience and education, a measurable gap often remains. It’s a signal — not of individual choices — but of structural imbalance in how work is valued and rewarded.
+
