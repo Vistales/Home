@@ -28,7 +28,7 @@ library(stringr)
 library(plotly)
 
 
-data <- read.csv("C:/Users/Pc/Documents/Data/dataset.csv")
+data <- read.csv("dataset.csv")
 
 # Remittances: Pakistan's Economic Lifeline 
 
@@ -114,7 +114,7 @@ Global Overview
 
 :::{.row style="margin:1% 15% 5% 15%; font-family: Georgia;font-size: 3.5vh;"}
 
-As of 2022, according to world bank, the global remittance landscape witnessed a surge of 5% from previous year, with total remittances reaching a staggering 626b USD, surpassing previous records.
+As of 2024, according to world bank, the global remittance landscape witnessed a surge of 4.6% from previous year, with total remittances reaching a staggering 905b USD, surpassing previous records.
 :::
 
 ::::{.row .row-body-outset style="margin:5% 0% 5% 0%; font-size:2vh;"}

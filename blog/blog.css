@@ -1,6 +1,6 @@
 
 
-body.index {
+body {
   margin: 0;
   height: 100vh;
   font-family: Georgia, Sans-Serif;
@@ -81,4 +81,3 @@ body.index {
     border: none;
     background-color: #E9D2C0;
 }
----

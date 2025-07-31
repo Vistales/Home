@@ -1,8 +1,12 @@
-body {
-  font-family: Georgia, serif;
-  font-weight: 500;
-}
 
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Georgia, Sans-Serif;
+  justify-content: center;
+  align-items: center;
+  animation: gradientBackground 30s linear infinite;
+}
 
 /* Style center-aligned text */
 .center-text {

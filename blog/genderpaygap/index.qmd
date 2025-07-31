@@ -6,12 +6,7 @@ format:
     code-fold: true
     toc: false
     number-sections: false
-    self-contained: true
-    grid:
-      sidebar-width: 50px
-      body-width: 2000px
-      margin-width: 0px
-      gutter-width: 0rem
+    
 page-layout: full
 
 embed-resources: true
@@ -23,7 +18,7 @@ This gap can be shaped by multiple factors:
 
 Fewer women in senior or high-paying roles
 
-Career interruptions (e.g., caregiving responsibilities)
+Career interruptions (e.g., care giving responsibilities)
 
 Occupational segregation — women concentrated in lower-paid sectors
 

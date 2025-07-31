@@ -1,3 +1,14 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Georgia, Sans-Serif;
+  justify-content: center;
+  align-items: center;
+  animation: gradientBackground 30s linear infinite;
+}
+
+
 .center-text {
   text-align: center;
   font-size: 24px;
@@ -17,4 +28,11 @@
   font-size: 18px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.navbar {
+  background-color: skyblue;
+  transition: background-color 1s ease;
 }

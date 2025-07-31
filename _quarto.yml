@@ -12,7 +12,7 @@ website:
 
   navbar:
     background: "transparent"
-    foreground: "#ffff"
+    foreground: "#000000"
     right:
       - href: index.qmd
         text: Home

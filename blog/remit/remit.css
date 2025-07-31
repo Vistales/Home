@@ -23,7 +23,8 @@ body{
   background-image: url(https://images.unsplash.com/photo-1502920514313-52581002a659?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   position: absolute;
-  opacity: 0.6;
+  background-color: grey;
+  opacity: 0.9;
   top: 0;
   left: 0;
   width: 100vw;
@@ -33,7 +34,7 @@ body{
 .title-text {
   color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
-  font-size: 8.5vh; /* Increased font size for better visibility */
+  font-size: 8.7vh; /* Increased font size for better visibility */
   font-weight: bold;
   font-family: fraunces;
   z-index: 2;
