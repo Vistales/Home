@@ -1,0 +1,33 @@
+"OBJECTID","ID_0","ISO","NAME_0","ID_1","NAME_1","ID_2","NAME_2","TYPE_2","ENGTYPE_2","NL_NAME_2","VARNAME_2"
+1,171,"PAK","Pakistan",1,"Azad Kashmir",1,"Azad Kashmir","Division","Division",NA,NA
+2,171,"PAK","Pakistan",2,"Baluchistan",2,"Kalat","Division","Division",NA,NA
+3,171,"PAK","Pakistan",2,"Baluchistan",3,"Makran","Division","Division",NA,NA
+4,171,"PAK","Pakistan",2,"Baluchistan",4,"Nasirabad","Division","Division",NA,NA
+5,171,"PAK","Pakistan",2,"Baluchistan",5,"Quetta","Division","Division",NA,NA
+6,171,"PAK","Pakistan",2,"Baluchistan",6,"Sibi","Division","Division",NA,NA
+7,171,"PAK","Pakistan",2,"Baluchistan",7,"Zhob","Division","Division",NA,"Loralai"
+8,171,"PAK","Pakistan",3,"F.A.T.A.",8,"F.A.T.A.","Division","Division",NA,NA
+9,171,"PAK","Pakistan",4,"F.C.T.",9,"Islamabad","Division","Division",NA,"Capital"
+10,171,"PAK","Pakistan",5,"N.W.F.P.",10,"Bannu","Division","Division",NA,NA
+11,171,"PAK","Pakistan",5,"N.W.F.P.",11,"Dera Ismail Khan","Division","Division",NA,"Di Khan"
+12,171,"PAK","Pakistan",5,"N.W.F.P.",12,"F.A.T.A.","Division","Division",NA,NA
+13,171,"PAK","Pakistan",5,"N.W.F.P.",13,"Hazara","Division","Division",NA,NA
+14,171,"PAK","Pakistan",5,"N.W.F.P.",14,"Kohat","Division","Division",NA,NA
+15,171,"PAK","Pakistan",5,"N.W.F.P.",15,"Malakand","Division","Division",NA,"Mala Kand"
+16,171,"PAK","Pakistan",5,"N.W.F.P.",16,"Mardan","Division","Division",NA,NA
+17,171,"PAK","Pakistan",5,"N.W.F.P.",17,"Peshawar","Division","Division",NA,NA
+18,171,"PAK","Pakistan",6,"Northern Areas",18,"Northern Areas","Division","Division",NA,NA
+19,171,"PAK","Pakistan",7,"Punjab",19,"Bahawalpur","Division","Division",NA,"Bahawal Pur"
+20,171,"PAK","Pakistan",7,"Punjab",20,"Dera Ghazi Khan","Division","Division",NA,"D.G.Khan"
+21,171,"PAK","Pakistan",7,"Punjab",21,"Faisalabad","Division","Division",NA,NA
+22,171,"PAK","Pakistan",7,"Punjab",22,"Gujranwala","Division","Division",NA,NA
+23,171,"PAK","Pakistan",7,"Punjab",23,"Lahore","Division","Division",NA,NA
+24,171,"PAK","Pakistan",7,"Punjab",24,"Multan","Division","Division",NA,NA
+25,171,"PAK","Pakistan",7,"Punjab",25,"Rawalpindi","Division","Division",NA,NA
+26,171,"PAK","Pakistan",7,"Punjab",26,"Sargodha","Division","Division",NA,NA
+27,171,"PAK","Pakistan",8,"Sind",27,"Hyderabad","Division","Division",NA,NA
+28,171,"PAK","Pakistan",8,"Sind",28,"Karachi","Division","Division",NA,NA
+29,171,"PAK","Pakistan",8,"Sind",29,"Larkana","Division","Division",NA,NA
+30,171,"PAK","Pakistan",8,"Sind",30,"Mirpur Khas","Division","Division",NA,NA
+31,171,"PAK","Pakistan",8,"Sind",31,"Rann of Kutch","Division","Division",NA,NA
+32,171,"PAK","Pakistan",8,"Sind",32,"Sukkur","Division","Division",NA,"Sakhar|Khairpur"

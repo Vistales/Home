@@ -1,0 +1,142 @@
+"OBJECTID","ID_0","ISO","NAME_0","ID_1","NAME_1","ID_2","NAME_2","ID_3","NAME_3","TYPE_3","ENGTYPE_3","NL_NAME_3","VARNAME_3"
+1,171,"PAK","Pakistan",1,"Azad Kashmir",1,"Azad Kashmir",1,"Bagh","District","District",NA,NA
+2,171,"PAK","Pakistan",1,"Azad Kashmir",1,"Azad Kashmir",2,"Bhimber","District","District",NA,NA
+3,171,"PAK","Pakistan",1,"Azad Kashmir",1,"Azad Kashmir",3,"Kotli","District","District",NA,NA
+4,171,"PAK","Pakistan",1,"Azad Kashmir",1,"Azad Kashmir",4,"Mirpur","District","District",NA,NA
+5,171,"PAK","Pakistan",1,"Azad Kashmir",1,"Azad Kashmir",5,"Muzaffarabad","District","District",NA,NA
+6,171,"PAK","Pakistan",1,"Azad Kashmir",1,"Azad Kashmir",6,"Neelum","District","District",NA,NA
+7,171,"PAK","Pakistan",1,"Azad Kashmir",1,"Azad Kashmir",7,"Poonch","District","District",NA,NA
+8,171,"PAK","Pakistan",1,"Azad Kashmir",1,"Azad Kashmir",8,"Sudhnati","District","District",NA,NA
+9,171,"PAK","Pakistan",2,"Baluchistan",2,"Kalat",9,"Awaran","District","District",NA,NA
+10,171,"PAK","Pakistan",2,"Baluchistan",2,"Kalat",10,"Disputed Area 1","District","District",NA,NA
+11,171,"PAK","Pakistan",2,"Baluchistan",2,"Kalat",11,"Disputed Area 2","District","District",NA,NA
+12,171,"PAK","Pakistan",2,"Baluchistan",2,"Kalat",12,"Kalat","District","District",NA,NA
+13,171,"PAK","Pakistan",2,"Baluchistan",2,"Kalat",13,"Kharan","District","District",NA,NA
+14,171,"PAK","Pakistan",2,"Baluchistan",2,"Kalat",14,"Khuzdar","District","District",NA,NA
+15,171,"PAK","Pakistan",2,"Baluchistan",2,"Kalat",15,"Lasbela","District","District",NA,NA
+16,171,"PAK","Pakistan",2,"Baluchistan",2,"Kalat",16,"Mastung","District","District",NA,"Mustung"
+17,171,"PAK","Pakistan",2,"Baluchistan",3,"Makran",17,"Gwadar","District","District",NA,NA
+18,171,"PAK","Pakistan",2,"Baluchistan",3,"Makran",18,"Kech","District","District",NA,NA
+19,171,"PAK","Pakistan",2,"Baluchistan",3,"Makran",19,"Panjgur","District","District",NA,NA
+20,171,"PAK","Pakistan",2,"Baluchistan",4,"Nasirabad",20,"Bolan","District","District",NA,NA
+21,171,"PAK","Pakistan",2,"Baluchistan",4,"Nasirabad",21,"Jafarabad","District","District",NA,"Nasir Abad"
+22,171,"PAK","Pakistan",2,"Baluchistan",4,"Nasirabad",22,"Jhal Magsi","District","District",NA,NA
+23,171,"PAK","Pakistan",2,"Baluchistan",4,"Nasirabad",23,"Nasirabad","District","District",NA,"Nasir Abad"
+24,171,"PAK","Pakistan",2,"Baluchistan",5,"Quetta",24,"Chagai","District","District",NA,NA
+25,171,"PAK","Pakistan",2,"Baluchistan",5,"Quetta",25,"Pishin","District","District",NA,NA
+26,171,"PAK","Pakistan",2,"Baluchistan",5,"Quetta",26,"Qilla Abdullah","District","District",NA,NA
+27,171,"PAK","Pakistan",2,"Baluchistan",5,"Quetta",27,"Quetta","District","District",NA,NA
+28,171,"PAK","Pakistan",2,"Baluchistan",6,"Sibi",28,"Dera Bugti","District","District",NA,NA
+29,171,"PAK","Pakistan",2,"Baluchistan",6,"Sibi",29,"Kholu","District","District",NA,NA
+30,171,"PAK","Pakistan",2,"Baluchistan",6,"Sibi",30,"Sibi","District","District",NA,NA
+31,171,"PAK","Pakistan",2,"Baluchistan",6,"Sibi",31,"Ziarat","District","District",NA,NA
+32,171,"PAK","Pakistan",2,"Baluchistan",7,"Zhob",32,"Barkhan","District","District",NA,NA
+33,171,"PAK","Pakistan",2,"Baluchistan",7,"Zhob",33,"Loralai","District","District",NA,NA
+34,171,"PAK","Pakistan",2,"Baluchistan",7,"Zhob",34,"Musakhel","District","District",NA,NA
+35,171,"PAK","Pakistan",2,"Baluchistan",7,"Zhob",35,"Qilla Saifullah","District","District",NA,NA
+36,171,"PAK","Pakistan",2,"Baluchistan",7,"Zhob",36,"Zhob","District","District",NA,NA
+37,171,"PAK","Pakistan",3,"F.A.T.A.",8,"F.A.T.A.",37,"Bajaur","District","District",NA,NA
+38,171,"PAK","Pakistan",3,"F.A.T.A.",8,"F.A.T.A.",38,"Khyber","District","District",NA,NA
+39,171,"PAK","Pakistan",3,"F.A.T.A.",8,"F.A.T.A.",39,"Kurram","District","District",NA,NA
+40,171,"PAK","Pakistan",3,"F.A.T.A.",8,"F.A.T.A.",40,"Largha Shirani","District","District",NA,NA
+41,171,"PAK","Pakistan",3,"F.A.T.A.",8,"F.A.T.A.",41,"Mohmand","District","District",NA,NA
+42,171,"PAK","Pakistan",3,"F.A.T.A.",8,"F.A.T.A.",42,"N. Waziristan","District","District",NA,"North Waziristan"
+43,171,"PAK","Pakistan",3,"F.A.T.A.",8,"F.A.T.A.",43,"Orakzai","District","District",NA,NA
+44,171,"PAK","Pakistan",3,"F.A.T.A.",8,"F.A.T.A.",44,"S. Waziristan","District","District",NA,"South Waziristan"
+45,171,"PAK","Pakistan",4,"F.C.T.",9,"Islamabad",45,"Islamabad","District","District",NA,NA
+46,171,"PAK","Pakistan",5,"N.W.F.P.",10,"Bannu",46,"Bannu","District","District",NA,NA
+47,171,"PAK","Pakistan",5,"N.W.F.P.",10,"Bannu",47,"Lakki Marwat","District","District",NA,NA
+48,171,"PAK","Pakistan",5,"N.W.F.P.",11,"Dera Ismail Khan",48,"Dera Ismail Khan","District","District",NA,"D.I.Khan"
+49,171,"PAK","Pakistan",5,"N.W.F.P.",11,"Dera Ismail Khan",49,"Tank","District","District",NA,NA
+50,171,"PAK","Pakistan",5,"N.W.F.P.",12,"F.A.T.A.",50,"Adam Khel","District","District",NA,NA
+51,171,"PAK","Pakistan",5,"N.W.F.P.",12,"F.A.T.A.",51,"Bhittani","District","District",NA,NA
+52,171,"PAK","Pakistan",5,"N.W.F.P.",13,"Hazara",52,"Abbottabad","District","District",NA,NA
+53,171,"PAK","Pakistan",5,"N.W.F.P.",13,"Hazara",53,"Battagram","District","District",NA,"Batgram"
+54,171,"PAK","Pakistan",5,"N.W.F.P.",13,"Hazara",54,"Haripur","District","District",NA,NA
+55,171,"PAK","Pakistan",5,"N.W.F.P.",13,"Hazara",55,"Kohistan","District","District",NA,NA
+56,171,"PAK","Pakistan",5,"N.W.F.P.",13,"Hazara",56,"Mansehra","District","District",NA,NA
+57,171,"PAK","Pakistan",5,"N.W.F.P.",14,"Kohat",57,"Hangu","District","District",NA,NA
+58,171,"PAK","Pakistan",5,"N.W.F.P.",14,"Kohat",58,"Karak","District","District",NA,NA
+59,171,"PAK","Pakistan",5,"N.W.F.P.",14,"Kohat",59,"Kohat","District","District",NA,NA
+60,171,"PAK","Pakistan",5,"N.W.F.P.",15,"Malakand",60,"Chitral","District","District",NA,NA
+61,171,"PAK","Pakistan",5,"N.W.F.P.",15,"Malakand",61,"Dir","District","District",NA,NA
+62,171,"PAK","Pakistan",5,"N.W.F.P.",15,"Malakand",62,"Malakand P.A.","District","District",NA,"Malakand"
+63,171,"PAK","Pakistan",5,"N.W.F.P.",15,"Malakand",63,"Shangla","District","District",NA,NA
+64,171,"PAK","Pakistan",5,"N.W.F.P.",15,"Malakand",64,"Swat","District","District",NA,NA
+65,171,"PAK","Pakistan",5,"N.W.F.P.",16,"Mardan",65,"Buner","District","District",NA,NA
+66,171,"PAK","Pakistan",5,"N.W.F.P.",16,"Mardan",66,"Mardan","District","District",NA,NA
+67,171,"PAK","Pakistan",5,"N.W.F.P.",16,"Mardan",67,"Swabi","District","District",NA,NA
+68,171,"PAK","Pakistan",5,"N.W.F.P.",17,"Peshawar",68,"Charsadda","District","District",NA,NA
+69,171,"PAK","Pakistan",5,"N.W.F.P.",17,"Peshawar",69,"Nowshera","District","District",NA,NA
+70,171,"PAK","Pakistan",5,"N.W.F.P.",17,"Peshawar",70,"Peshawar","District","District",NA,NA
+71,171,"PAK","Pakistan",6,"Northern Areas",18,"Northern Areas",71,"Chilas","District","District",NA,NA
+72,171,"PAK","Pakistan",6,"Northern Areas",18,"Northern Areas",72,"Gilgit (Tribal Territory)","District","District",NA,NA
+73,171,"PAK","Pakistan",6,"Northern Areas",18,"Northern Areas",73,"Gilgit","District","District",NA,NA
+74,171,"PAK","Pakistan",6,"Northern Areas",18,"Northern Areas",74,"Kargil","District","District",NA,NA
+75,171,"PAK","Pakistan",6,"Northern Areas",18,"Northern Areas",75,"Kupwara (Gilgit Wazarat)","District","District",NA,NA
+76,171,"PAK","Pakistan",6,"Northern Areas",18,"Northern Areas",76,"Ladakh (Leh)","District","District",NA,NA
+77,171,"PAK","Pakistan",7,"Punjab",19,"Bahawalpur",77,"Bahawalnagar","District","District",NA,NA
+78,171,"PAK","Pakistan",7,"Punjab",19,"Bahawalpur",78,"Bahawalpur","District","District",NA,"Bhawalpur"
+79,171,"PAK","Pakistan",7,"Punjab",19,"Bahawalpur",79,"Rahimyar Khan","District","District",NA,"Rahim Yar Khan"
+80,171,"PAK","Pakistan",7,"Punjab",20,"Dera Ghazi Khan",80,"Dera Ghazi Kha","District","District",NA,NA
+81,171,"PAK","Pakistan",7,"Punjab",20,"Dera Ghazi Khan",81,"Layyah","District","District",NA,"Lieah"
+82,171,"PAK","Pakistan",7,"Punjab",20,"Dera Ghazi Khan",82,"Muzaffargarh","District","District",NA,NA
+83,171,"PAK","Pakistan",7,"Punjab",20,"Dera Ghazi Khan",83,"Rajan Pur","District","District",NA,"Rajanpur"
+84,171,"PAK","Pakistan",7,"Punjab",21,"Faisalabad",84,"Faisalabad","District","District",NA,NA
+85,171,"PAK","Pakistan",7,"Punjab",21,"Faisalabad",85,"Jhang","District","District",NA,NA
+86,171,"PAK","Pakistan",7,"Punjab",21,"Faisalabad",86,"Toba Tek Singh","District","District",NA,NA
+87,171,"PAK","Pakistan",7,"Punjab",22,"Gujranwala",87,"Gujarat","District","District",NA,NA
+88,171,"PAK","Pakistan",7,"Punjab",22,"Gujranwala",88,"Gujranwala 1","District","District",NA,NA
+89,171,"PAK","Pakistan",7,"Punjab",22,"Gujranwala",89,"Gujranwala 2","District","District",NA,NA
+90,171,"PAK","Pakistan",7,"Punjab",22,"Gujranwala",90,"Gujrat","District","District",NA,"Gujarat"
+91,171,"PAK","Pakistan",7,"Punjab",22,"Gujranwala",91,"Hafizabad","District","District",NA,NA
+92,171,"PAK","Pakistan",7,"Punjab",22,"Gujranwala",92,"Narowal 1","District","District",NA,"Norowal"
+93,171,"PAK","Pakistan",7,"Punjab",22,"Gujranwala",93,"Narowal 2","District","District",NA,"Norowal"
+94,171,"PAK","Pakistan",7,"Punjab",22,"Gujranwala",94,"Sialkot","District","District",NA,NA
+95,171,"PAK","Pakistan",7,"Punjab",23,"Lahore",95,"Kasur","District","District",NA,NA
+96,171,"PAK","Pakistan",7,"Punjab",23,"Lahore",96,"Lahore","District","District",NA,NA
+97,171,"PAK","Pakistan",7,"Punjab",23,"Lahore",97,"Nankana Sahib","District","District",NA,NA
+98,171,"PAK","Pakistan",7,"Punjab",23,"Lahore",98,"Okara 1","District","District",NA,NA
+99,171,"PAK","Pakistan",7,"Punjab",23,"Lahore",99,"Okara","District","District",NA,NA
+100,171,"PAK","Pakistan",7,"Punjab",23,"Lahore",100,"Sheikhupura","District","District",NA,NA
+101,171,"PAK","Pakistan",7,"Punjab",24,"Multan",101,"Khanewal","District","District",NA,NA
+102,171,"PAK","Pakistan",7,"Punjab",24,"Multan",102,"Lodhran","District","District",NA,NA
+103,171,"PAK","Pakistan",7,"Punjab",24,"Multan",103,"Multan","District","District",NA,NA
+104,171,"PAK","Pakistan",7,"Punjab",24,"Multan",104,"Pakpattan","District","District",NA,NA
+105,171,"PAK","Pakistan",7,"Punjab",24,"Multan",105,"Sahiwal","District","District",NA,NA
+106,171,"PAK","Pakistan",7,"Punjab",24,"Multan",106,"Vehari","District","District",NA,NA
+107,171,"PAK","Pakistan",7,"Punjab",25,"Rawalpindi",107,"Attok","District","District",NA,"Attock"
+108,171,"PAK","Pakistan",7,"Punjab",25,"Rawalpindi",108,"Chakwal","District","District",NA,NA
+109,171,"PAK","Pakistan",7,"Punjab",25,"Rawalpindi",109,"Jhelum","District","District",NA,NA
+110,171,"PAK","Pakistan",7,"Punjab",25,"Rawalpindi",110,"Rawalpindi","District","District",NA,NA
+111,171,"PAK","Pakistan",7,"Punjab",26,"Sargodha",111,"Bhakkar","District","District",NA,NA
+112,171,"PAK","Pakistan",7,"Punjab",26,"Sargodha",112,"Khushab","District","District",NA,NA
+113,171,"PAK","Pakistan",7,"Punjab",26,"Sargodha",113,"Mianwali","District","District",NA,NA
+114,171,"PAK","Pakistan",7,"Punjab",26,"Sargodha",114,"Sargodha","District","District",NA,NA
+115,171,"PAK","Pakistan",8,"Sind",27,"Hyderabad",115,"Badin","District","District",NA,NA
+116,171,"PAK","Pakistan",8,"Sind",27,"Hyderabad",116,"Dadu","District","District",NA,NA
+117,171,"PAK","Pakistan",8,"Sind",27,"Hyderabad",117,"Hyderabad","District","District",NA,NA
+118,171,"PAK","Pakistan",8,"Sind",27,"Hyderabad",118,"Jamshoro","District","District",NA,NA
+119,171,"PAK","Pakistan",8,"Sind",27,"Hyderabad",119,"Matiari","District","District",NA,NA
+120,171,"PAK","Pakistan",8,"Sind",27,"Hyderabad",120,"Tando Allahyar","District","District",NA,NA
+121,171,"PAK","Pakistan",8,"Sind",27,"Hyderabad",121,"Tando M. Khan","District","District",NA,NA
+122,171,"PAK","Pakistan",8,"Sind",27,"Hyderabad",122,"Thatta","District","District",NA,NA
+123,171,"PAK","Pakistan",8,"Sind",28,"Karachi",123,"Karachi Central","District","District",NA,NA
+124,171,"PAK","Pakistan",8,"Sind",28,"Karachi",124,"Karachi East","District","District",NA,NA
+125,171,"PAK","Pakistan",8,"Sind",28,"Karachi",125,"Karachi South","District","District",NA,NA
+126,171,"PAK","Pakistan",8,"Sind",28,"Karachi",126,"Karachi west","District","District",NA,NA
+127,171,"PAK","Pakistan",8,"Sind",28,"Karachi",127,"Malir","District","District",NA,NA
+128,171,"PAK","Pakistan",8,"Sind",29,"Larkana",128,"Jakobabad","District","District",NA,NA
+129,171,"PAK","Pakistan",8,"Sind",29,"Larkana",129,"Kashmore","District","District",NA,NA
+130,171,"PAK","Pakistan",8,"Sind",29,"Larkana",130,"Larkana","District","District",NA,NA
+131,171,"PAK","Pakistan",8,"Sind",29,"Larkana",131,"Shikarpur","District","District",NA,NA
+132,171,"PAK","Pakistan",8,"Sind",30,"Mirpur Khas",132,"Mirphurkhas","District","District",NA,NA
+133,171,"PAK","Pakistan",8,"Sind",30,"Mirpur Khas",133,"Mithi","District","District",NA,NA
+134,171,"PAK","Pakistan",8,"Sind",30,"Mirpur Khas",134,"Sanghar","District","District",NA,NA
+135,171,"PAK","Pakistan",8,"Sind",30,"Mirpur Khas",135,"Umerkot","District","District",NA,"Umarkot"
+136,171,"PAK","Pakistan",8,"Sind",31,"Rann of Kutch",136,"Rann of Kutch","District","District",NA,NA
+137,171,"PAK","Pakistan",8,"Sind",32,"Sukkur",137,"Ghotki","District","District",NA,NA
+138,171,"PAK","Pakistan",8,"Sind",32,"Sukkur",138,"Khairpur","District","District",NA,NA
+139,171,"PAK","Pakistan",8,"Sind",32,"Sukkur",139,"Naushahro Firoz","District","District",NA,NA
+140,171,"PAK","Pakistan",8,"Sind",32,"Sukkur",140,"Nawab Shah","District","District",NA,"Nawabshah"
+141,171,"PAK","Pakistan",8,"Sind",32,"Sukkur",141,"Sukkur","District","District",NA,NA
