@@ -73,5 +73,8 @@
   },
   "blog/genderpaygap/index.qmd": {
     "index.html": "0fec5fb4"
+  },
+  "chart/education-employment/index.qmd": {
+    "index.html": "112eff1a"
   }
 }

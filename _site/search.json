@@ -29,7 +29,7 @@
     "href": "blog/index.html",
     "title": "\nStories\n",
     "section": "",
-    "text": "Remittances: Pakistan’s Economic Lifeline\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Remittances: Pakistan’s Economic Lifeline\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/remit/index.html",
@@ -113,7 +113,7 @@
     "href": "chart/index.html",
     "title": "\nCharts\n",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMapping Population Growth Rate of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\nTop Earning E-Gamers of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnder One Roof: Exploring Household Sizes Across Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\n\nMapping Educational Disparities in Pakistan\n\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\n\n\n\nUser Growth Insights of Pakistan’s Social Media Landscape\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrade Imbalance\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMapping Population Growth Rate of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nEducation Employment Paradox in Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nTop Earning E-Gamers of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nUnder One Roof: Exploring Household Sizes Across Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nMapping Educational Disparities in Pakistan\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\n\n\nUser Growth Insights of Pakistan’s Social Media Landscape\n\n\n\n\n\n\n\n\n\n\n\n\nTrade Imbalance\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "db/Population/index.html",
@@ -127,7 +127,7 @@
     "href": "db/index.html",
     "title": "\nDashboards\n",
     "section": "",
-    "text": "Unlock the power of data to shape the future of Pakistan \n\nVistales specializes in creating insightful dashboards that bring Pakistan’s data to life. By transforming complex datasets into intuitive visualizations, we make information accessible and actionable. Our dashboards offer a clear view of key metrics, helping you make informed decisions that drive progress and innovation.\nDiscover the stories behind the numbers. Click on our dashboards to explore topics based on your interest.|\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPakistan’s Population Dashboard\n\n\n\n\n\n\n\n\n\n\n\n\n\nPakistan’s Remittance Dashboard\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Unlock the power of data to shape the future of Pakistan \n\nVistales specializes in creating insightful dashboards that bring Pakistan’s data to life. By transforming complex datasets into intuitive visualizations, we make information accessible and actionable. Our dashboards offer a clear view of key metrics, helping you make informed decisions that drive progress and innovation.\nDiscover the stories behind the numbers. Click on our dashboards to explore topics based on your interest.|\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPakistan’s Population Dashboard\n\n\n\n\n\n\n\n\n\n\n\n\nPakistan’s Remittance Dashboard\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "db/Population/index.html#column",
@@ -205,5 +205,12 @@
     "title": "",
     "section": "",
     "text": "The gender pay gap reflects the difference in average earnings between men and women in the workforce. It doesn’t always mean that women are paid less for doing the exact same job — rather, it highlights patterns across industries, roles, and seniority levels that lead to unequal pay outcomes over time.\nThis gap can be shaped by multiple factors:\nFewer women in senior or high-paying roles\nCareer interruptions (e.g., care giving responsibilities)\nOccupational segregation — women concentrated in lower-paid sectors\nPay negotiation gaps and biased promotion paths\nEven when controlling for experience and education, a measurable gap often remains. It’s a signal — not of individual choices — but of structural imbalance in how work is valued and rewarded."
+  },
+  {
+    "objectID": "chart/education-employment/index.html",
+    "href": "chart/education-employment/index.html",
+    "title": "Education Employment Paradox in Pakistan",
+    "section": "",
+    "text": "In Pakistan, education is often viewed as the gateway to opportunity — yet the data reveals a more nuanced reality.\nThis visualization encourages us to think deeper:\n\nWhy are so many educated individuals still struggling to secure employment?\nWhat types of skills does our labor market truly value today?\nHow can we better connect education with meaningful work opportunities?\nAnd how can industries, institutions, and communities come together to close this divide?\n\nEducation opens doors — but only when it walks hand in hand with employability."
   }
 ]
