@@ -113,7 +113,7 @@
     "href": "chart/index.html",
     "title": "\nCharts\n",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMapping Population Growth Rate of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nEducation Employment Paradox in Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nTop Earning E-Gamers of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nUnder One Roof: Exploring Household Sizes Across Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nMapping Educational Disparities in Pakistan\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\n\n\nUser Growth Insights of Pakistan’s Social Media Landscape\n\n\n\n\n\n\n\n\n\n\n\n\nTrade Imbalance\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMapping Population Growth Rate of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nEducation Employment Paradox in Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nTop Earning E-Gamers of Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nEmployment Distribution by Major Industries\n\n\n\n\n\n\n\n\n\n\n\n\nUnder One Roof: Exploring Household Sizes Across Pakistan\n\n\n\n\n\n\n\n\n\n\n\n\nMapping Educational Disparities in Pakistan\n\n\n\n\n\n\n\n\n\n\nPopulation Distribution by Age\n\n\n\n\n\n\n\n\n\n\n\n\nCurrency in Motion\n\n\n\n\n\n\n\n\n\n\n\n\nUser Growth Insights of Pakistan’s Social Media Landscape\n\n\n\n\n\n\n\n\n\n\n\n\nTrade Imbalance\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "db/Population/index.html",
@@ -210,6 +210,13 @@
     "objectID": "chart/education-employment/index.html",
     "href": "chart/education-employment/index.html",
     "title": "Education Employment Paradox in Pakistan",
+    "section": "",
+    "text": "In Pakistan, education is often viewed as the gateway to opportunity — yet the data reveals a more nuanced reality.\nThis visualization encourages us to think deeper:\n\nWhy are so many educated individuals still struggling to secure employment?\nWhat types of skills does our labor market truly value today?\nHow can we better connect education with meaningful work opportunities?\nAnd how can industries, institutions, and communities come together to close this divide?\n\nEducation opens doors — but only when it walks hand in hand with employability."
+  },
+  {
+    "objectID": "chart/employment-industry/index.html",
+    "href": "chart/employment-industry/index.html",
+    "title": "Employment Distribution by Major Industries",
     "section": "",
     "text": "In Pakistan, education is often viewed as the gateway to opportunity — yet the data reveals a more nuanced reality.\nThis visualization encourages us to think deeper:\n\nWhy are so many educated individuals still struggling to secure employment?\nWhat types of skills does our labor market truly value today?\nHow can we better connect education with meaningful work opportunities?\nAnd how can industries, institutions, and communities come together to close this divide?\n\nEducation opens doors — but only when it walks hand in hand with employability."
   }

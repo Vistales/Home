@@ -76,5 +76,8 @@
   },
   "chart/education-employment/index.qmd": {
     "index.html": "112eff1a"
+  },
+  "chart/employment-industry/index.qmd": {
+    "index.html": "3a036e21"
   }
 }
